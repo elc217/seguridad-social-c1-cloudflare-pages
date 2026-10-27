@@ -3,11 +3,14 @@ import {
   sessionSummary, emptyProgress, validateProgress, mergeProgress, unitStatus, resultsMetrics
 } from "./domain.js";
 import { getGoogleSyncConfig } from "./sync/config.js";
+import { connectGoogle, disconnectGoogle, getGoogleAccessToken } from "./sync/google-auth.js";
+import { findProgressFile, downloadProgress, syncProgress } from "./sync/google-drive.js";
 
 const app = document.querySelector("#app");
 const notice = document.querySelector("#notice");
 const statusLabels = { new: "Pendiente", "in-progress": "En estudio", mastered: "Dominada" };
 let data, progress, storageBlocked = false, activeTest = null, lastResult = null;
+let syncStatus = "disconnected", syncError = "";
 let cardIndex = 0, cards = [], revealed = false, cardScope = null;
 const library = { query: "", section: "", kind: "", status: "", page: 0 };
 
@@ -346,14 +349,43 @@ function importProgress(value) {
   if (save(next)) render();
 }
 
+async function syncGoogleDrive() {
+  syncStatus = "syncing";
+  syncError = "";
+  render();
+  try {
+    const accessToken = await connectGoogle();
+    const file = await findProgressFile(accessToken);
+    const incoming = file ? await downloadProgress(accessToken, file.id) : null;
+    const result = await syncProgress({
+      accessToken,
+      localProgress: progress,
+      incomingProgress: incoming,
+      contentVersion: data.contentVersion,
+      unitIds: new Set(data.units.map(unit => unit.id))
+    });
+    if (!save(result.progress)) throw new Error("No se pudo guardar el progreso combinado en este dispositivo.");
+    syncStatus = "connected";
+    render();
+  } catch (error) {
+    syncStatus = "error";
+    syncError = error instanceof Error ? error.message : String(error);
+    showError(error);
+    render();
+  }
+}
+
 function syncPanel() {
   const config = getGoogleSyncConfig();
+  const status = syncStatus === "connected" ? "Conectado" : syncStatus === "syncing" ? "Sincronizando…" : syncStatus === "error" ? `Error: ${syncError}` : "No conectado";
   return panel(heading("Sincronización entre dispositivos"),
-    text("El progreso se guarda en este dispositivo. Puedes preparar una copia privada en el espacio de la aplicación de tu Google Drive cuando la sincronización esté configurada."),
+    text(`Estado: ${status}`),
+    text("Solo se sincroniza tu progreso en el espacio privado de la aplicación de tu Google Drive. La biblioteca y las preguntas no se suben."),
     text(config.enabled
-      ? "Google Drive está configurado; la autorización se solicitará únicamente cuando pulses Conectar."
-      : "Google Drive aún no está configurado en esta versión. No se solicita ningún permiso ni se envían datos.", "muted"),
-    row(button("Conectar con Google Drive", () => showError(new Error("La sincronización de Google Drive todavía no está activada en este build.")), { disabled: !config.enabled }),
+      ? "Google solicitará permiso únicamente cuando pulses el botón."
+      : "Google Drive no está configurado; el progreso permanece solo en este dispositivo.", "muted"),
+    row(button(syncStatus === "connected" ? "Sincronizar ahora" : "Conectar con Google Drive", syncGoogleDrive, { disabled: !config.enabled || syncStatus === "syncing" }),
+      syncStatus === "connected" ? button("Desconectar", () => { disconnectGoogle(); syncStatus = "disconnected"; render(); }, { class: "secondary" }) : null,
       button("Exportar copia JSON", () => download(progress, "lgss-progreso-unificado.json"), { class: "secondary" })));
 }
 
