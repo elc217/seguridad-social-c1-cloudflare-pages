@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "prepare-data": "node scripts/prepare-data.mjs",
+    "prepare-web": "node scripts/prepare-web.mjs",
     "update-boe-links": "node scripts/update-boe-links.mjs",
     "package": "node scripts/package.mjs",
     "start": "node scripts/serve.mjs",

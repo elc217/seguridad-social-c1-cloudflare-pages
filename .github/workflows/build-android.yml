@@ -45,6 +45,10 @@ jobs:
       working-directory: ./version-unificada
       run: npm run generate-splash
 
+    - name: Prepare web assets
+      working-directory: ./version-unificada
+      run: npm run prepare-web
+
     - name: Sync Capacitor
       working-directory: ./version-unificada
       run: npx cap sync android
