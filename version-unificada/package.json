@@ -23,7 +23,7 @@
     "generate-splash": "node scripts/generate-splash.mjs"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "description": "Oposición Administrativos C1 - Seguridad Social ordenada para estudiar precepto a precepto",
   "main": "electron-main.js",
