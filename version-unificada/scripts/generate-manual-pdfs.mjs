@@ -1,10 +1,12 @@
-import { writeFile, unlink } from "node:fs/promises";
+import { readFile, writeFile, unlink } from "node:fs/promises";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { join } from "node:path";
 
 const root = fileURLToPath(new URL("../../", import.meta.url));
 const outDir = root;
+const logoData = `data:image/png;base64,${(await readFile(join(root, "version-unificada/assets/ecap-logo.png"))).toString("base64")}`;
+const bookData = `data:image/svg+xml;base64,${(await readFile(join(root, "version-unificada/assets/libro.svg"))).toString("base64")}`;
 const esc = value => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const wrap = (value, width = 105) => {
   const words = String(value).split(/\s+/u);
@@ -23,8 +25,9 @@ function makeSvg(title, subtitle, sections) {
   const parts = [
     `<rect width="100%" height="100%" fill="#f5f9fc"/>`,
     `<rect x="0" y="0" width="794" height="145" fill="#125b95"/>`,
-    `<image href="version-unificada/assets/libro.svg" x="38" y="28" width="75" height="75" preserveAspectRatio="xMidYMid meet"/>`,
-    `<image href="version-unificada/assets/ecap-logo.png" x="620" y="38" width="135" height="38" preserveAspectRatio="xMidYMid meet"/>`,
+    `<image href="${bookData}" x="38" y="28" width="75" height="75" preserveAspectRatio="xMidYMid meet"/>`,
+    `<rect x="605" y="24" width="165" height="66" rx="8" fill="#0d4775"/>`,
+    `<image href="${logoData}" x="615" y="34" width="145" height="46" preserveAspectRatio="xMidYMid meet"/>`,
     `<text x="135" y="62" font-family="Arial" font-size="25" font-weight="bold" fill="white">${esc(title)}</text>`,
     `<text x="135" y="94" font-family="Arial" font-size="15" fill="#dcecf7">${esc(subtitle)}</text>`
   ];
@@ -39,8 +42,8 @@ function makeSvg(title, subtitle, sections) {
         item.labels.forEach((label, index) => {
           const x = 42 + index * 178;
           parts.push(`<rect x="${x}" y="${y}" width="${boxW}" height="62" rx="8" fill="#fff" stroke="#738ca2"/>`);
-          parts.push(`<text x="${x + boxW / 2}" y="${y + 27}" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#125b95">${esc(label[0])}</text>`);
-          parts.push(`<text x="${x + boxW / 2}" y="${y + 46}" text-anchor="middle" font-family="Arial" font-size="10" fill="#4b6175">${esc(label[1])}</text>`);
+          parts.push(`<text x="${x + boxW / 2}" y="${y + 25}" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#125b95">${esc(label[0])}</text>`);
+          parts.push(`<text x="${x + boxW / 2}" y="${y + 47}" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="10" fill="#4b6175">${esc(label[1])}</text>`);
           if (index < item.labels.length - 1) parts.push(`<text x="${x + 160}" y="${y + 38}" font-family="Arial" font-size="22" fill="#125b95">→</text>`);
         });
         y += 88;

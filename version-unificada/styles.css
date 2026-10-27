@@ -96,7 +96,8 @@ nav a[aria-current] { color: var(--primary); }
   padding: 1.5rem 20px 6rem; color: #4b6175; font-size: .75rem; line-height: 1.5;
   text-align: center;
 }
-.institutional-footer img { width: 120px; max-height: 48px; object-fit: contain; margin: 0 auto .35rem; }
+.ecap-mark { display: inline-flex; align-items: center; justify-content: center; width: 150px; height: 48px; margin: 0 auto .35rem; padding: 6px 12px; border-radius: 8px; background: #0d4775; }
+.ecap-mark img { width: 120px; height: 33px; object-fit: contain; }
 .institutional-footer strong { color: #12304a; font-size: .8rem; }
 #notice { margin: 1rem auto; max-width: 1040px; padding: 1rem; color: #782b17; background: #ffebe4; border: 1px solid #dd9f8d; border-radius: 10px; }
 @media (max-width: 600px) {
