@@ -1,0 +1,87 @@
+{
+  "name": "lgss-c1-unificada",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare-data": "node scripts/prepare-data.mjs",
+    "update-boe-links": "node scripts/update-boe-links.mjs",
+    "package": "node scripts/package.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "electron": "electron .",
+    "build:win": "electron-builder --win",
+    "build:mac-intel": "electron-builder --mac --x64",
+    "build:mac-arm": "electron-builder --mac --arm64",
+    "build:all": "electron-builder -mwl",
+    "cap:sync": "npx cap sync",
+    "cap:android": "npx cap open android",
+    "cap:ios": "npx cap open ios",
+    "build:android": "npx cap sync android && cd android && ./gradlew assembleDebug",
+    "build:ios": "npx cap sync ios && cd ios && xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug",
+    "generate-icons": "node scripts/generate-icons.mjs",
+    "generate-splash": "node scripts/generate-splash.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "description": "Oposición Administrativos C1 - Seguridad Social ordenada para estudiar precepto a precepto",
+  "main": "electron-main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/ios": "^8.5.3",
+    "eas-cli": "^26.0.0",
+    "electron": "^45.0.0",
+    "electron-builder": "^26.18.0",
+    "sharp": "^0.35.5"
+  },
+  "build": {
+    "appId": "com.lgss.c1",
+    "productName": "LGSS Seguridad Social C1",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "index.html",
+      "styles.css",
+      "src/**/*",
+      "assets/**/*",
+      "data/**/*",
+      "manifest.json",
+      "sw.js",
+      "electron-main.js",
+      "preload.js"
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ],
+      "icon": "assets/libro.svg"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon-512x512.png"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Education"
+    }
+  }
+}

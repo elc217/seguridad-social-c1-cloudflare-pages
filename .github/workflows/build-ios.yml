@@ -1,0 +1,55 @@
+name: Build iOS IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'version-unificada/**'
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      working-directory: ./version-unificada
+      run: npm ci
+
+    - name: Generate icons
+      working-directory: ./version-unificada
+      run: npm run generate-icons
+
+    - name: Generate splash
+      working-directory: ./version-unificada
+      run: npm run generate-splash
+
+    - name: Sync Capacitor
+      working-directory: ./version-unificada
+      run: npx cap sync ios
+
+    - name: Build iOS
+      working-directory: ./version-unificada/ios
+      run: xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug -sdk iphoneos -derivedDataPath build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO
+
+    - name: Create IPA
+      working-directory: ./version-unificada/ios/build/Build/Products/Debug-iphoneos
+      run: |
+        mkdir -p "$GITHUB_WORKSPACE/version-unificada/dist/Payload"
+        cp -R App.app "$GITHUB_WORKSPACE/version-unificada/dist/Payload/App.app"
+        cd "$GITHUB_WORKSPACE/version-unificada/dist"
+        zip -qr App-Debug.ipa Payload
+        rm -rf Payload
+
+    - name: Upload IPA
+      uses: actions/upload-artifact@v4
+      with:
+        name: ios-ipa
+        path: version-unificada/dist/App-Debug.ipa

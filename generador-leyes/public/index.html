@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Aplicaciones de Leyes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 1.1em;
+    }
+
+    .form-section {
+      margin-bottom: 30px;
+      padding: 25px;
+      background: #f8f9fa;
+      border-radius: 12px;
+      border: 2px solid #e9ecef;
+    }
+
+    .form-section h2 {
+      color: #495057;
+      margin-bottom: 20px;
+      font-size: 1.3em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .form-section h2::before {
+      content: '';
+      width: 4px;
+      height: 24px;
+      background: #667eea;
+      border-radius: 2px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #495057;
+      font-weight: 600;
+      font-size: 0.95em;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #dee2e6;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: all 0.3s;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+      font-family: 'Monaco', 'Menlo', monospace;
+      font-size: 0.9em;
+    }
+
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .palette-card {
+      cursor: pointer;
+      border: 2px solid #e9ecef;
+      border-radius: 12px;
+      padding: 15px;
+      transition: all 0.3s;
+      background: white;
+    }
+
+    .palette-card:hover {
+      border-color: #667eea;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+    }
+
+    .palette-preview {
+      height: 60px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .palette-name {
+      font-size: 0.85em;
+      font-weight: 600;
+      color: #495057;
+      text-align: center;
+      display: block;
+    }
+
+    .color-input {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    input[type="color"] {
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    input[type="color"]::-webkit-color-swatch-wrapper {
+      padding: 0;
+    }
+
+    input[type="color"]::-webkit-color-swatch {
+      border: 2px solid #dee2e6;
+      border-radius: 6px;
+    }
+
+    .color-value {
+      font-family: 'Monaco', monospace;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .preview {
+      margin-top: 30px;
+      padding: 25px;
+      background: white;
+      border-radius: 12px;
+      border: 2px solid #e9ecef;
+    }
+
+    .preview-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .preview-icon {
+      width: 50px;
+      height: 50px;
+      background: #e9ecef;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .preview-brand {
+      flex: 1;
+    }
+
+    .preview-eyebrow {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+      margin-bottom: 3px;
+    }
+
+    .preview-title {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .preview-desc {
+      font-size: 12px;
+      font-weight: 500;
+      margin-top: 3px;
+    }
+
+    .preview-panel {
+      padding: 20px;
+      border-radius: 12px;
+      border: 2px solid;
+      margin-bottom: 15px;
+    }
+
+    .preview-nav {
+      display: flex;
+      justify-content: space-around;
+      padding: 12px;
+      border-radius: 10px;
+      border-top: 2px solid;
+    }
+
+    .preview-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+    }
+
+    .preview-nav-icon {
+      width: 24px;
+      height: 24px;
+      background: #e9ecef;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 16px 32px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.1em;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .loading {
+      display: none;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .loading.active {
+      display: block;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #667eea;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 15px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .success {
+      display: none;
+      background: #d4edda;
+      color: #155724;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .success.active {
+      display: block;
+    }
+
+    .error {
+      display: none;
+      background: #f8d7da;
+      color: #721c24;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .error.active {
+      display: block;
+    }
+
+    .template-buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .template-btn {
+      flex: 1;
+      padding: 10px;
+      background: #f8f9fa;
+      border: 2px solid #dee2e6;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: all 0.3s;
+    }
+
+    .template-btn:hover {
+      background: #e9ecef;
+      border-color: #667eea;
+    }
+
+    .upload-section {
+      margin-bottom: 20px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      border: 2px dashed #dee2e6;
+    }
+
+    .upload-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .upload-btn {
+      flex: 1;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95em;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .upload-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    }
+
+    .upload-status {
+      margin-top: 15px;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      display: none;
+    }
+
+    .upload-status.success {
+      display: block;
+      background: #d4edda;
+      color: #155724;
+    }
+
+    .upload-status.error {
+      display: block;
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    .upload-status.loading {
+      display: block;
+      background: #fff3cd;
+      color: #856404;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Generador de Aplicaciones de Leyes</h1>
+    <p class="subtitle">Crea aplicaciones de estudio de leyes con tu propio contenido y colores personalizados</p>
+
+    <form id="generatorForm">
+      <!-- Información básica -->
+      <div class="form-section">
+        <h2>📝 Información de la Aplicación</h2>
+        <div class="form-group">
+          <label for="appName">Nombre de la aplicación</label>
+          <input type="text" id="appName" value="Mi Ley" placeholder="Ej: Constitución Española, Código Civil...">
+        </div>
+        <div class="form-group">
+          <label for="appDescription">Descripción</label>
+          <input type="text" id="appDescription" value="Aplicación de estudio" placeholder="Descripción breve de la aplicación">
+        </div>
+      </div>
+
+      <!-- Colores -->
+      <div class="form-section">
+        <h2>🎨 Personalización de Colores</h2>
+        <div class="palette-grid">
+          <div class="palette-card" onclick="applyPalette('blue')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #125B95 0%, #F5F9FC 100%);"></div>
+            <span class="palette-name">Azul (Seguridad Social)</span>
+          </div>
+          <div class="palette-card" onclick="applyPalette('green')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #146342 0%, #F0F9F4 100%);"></div>
+            <span class="palette-name">Verde</span>
+          </div>
+          <div class="palette-card" onclick="applyPalette('red')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #A12C2C 0%, #FCF5F5 100%);"></div>
+            <span class="palette-name">Rojo</span>
+          </div>
+          <div class="palette-card" onclick="applyPalette('purple')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #6B21A8 0%, #F9F5FC 100%);"></div>
+            <span class="palette-name">Púrpura</span>
+          </div>
+          <div class="palette-card" onclick="applyPalette('orange')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #C2410C 0%, #FFF7ED 100%);"></div>
+            <span class="palette-name">Naranja</span>
+          </div>
+          <div class="palette-card" onclick="applyPalette('teal')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #0D9488 0%, #F0FDFA 100%);"></div>
+            <span class="palette-name">Turquesa</span>
+          </div>
+          <div class="palette-card" onclick="applyPalette('pink')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #BE185D 0%, #FDF2F8 100%);"></div>
+            <span class="palette-name">Rosa</span>
+          </div>
+          <div class="palette-card" onclick="applyPalette('indigo')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #4338CA 0%, #EEF2FF 100%);"></div>
+            <span class="palette-name">Índigo</span>
+          </div>
+          <div class="palette-card" onclick="applyPalette('slate')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #475569 0%, #F8FAFC 100%);"></div>
+            <span class="palette-name">Gris</span>
+          </div>
+          <div class="palette-card" onclick="applyPalette('amber')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #B45309 0%, #FFFBEB 100%);"></div>
+            <span class="palette-name">Ámbar</span>
+          </div>
+          <div class="palette-card" onclick="applyPalette('cyan')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #0891B2 0%, #ECFEFF 100%);"></div>
+            <span class="palette-name">Cian</span>
+          </div>
+          <div class="palette-card" onclick="applyPalette('emerald')">
+            <div class="palette-preview" style="background: linear-gradient(135deg, #059669 0%, #ECFDF5 100%);"></div>
+            <span class="palette-name">Esmeralda</span>
+          </div>
+        </div>
+        <p style="margin-top: 15px; color: #666; font-size: 0.9em;">💡 Haz clic en una paleta para aplicarla automáticamente, o personaliza los colores manualmente abajo:</p>
+        <div class="color-grid">
+          <div class="form-group">
+            <label for="primaryColor">Color primario</label>
+            <div class="color-input">
+              <input type="color" id="primaryColor" value="#125B95">
+              <span class="color-value" id="primaryColorValue">#125B95</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="backgroundColor">Color de fondo</label>
+            <div class="color-input">
+              <input type="color" id="backgroundColor" value="#F5F9FC">
+              <span class="color-value" id="backgroundColorValue">#F5F9FC</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="textColor">Color de texto</label>
+            <div class="color-input">
+              <input type="color" id="textColor" value="#12304A">
+              <span class="color-value" id="textColorValue">#12304A</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="borderColor">Color de bordes</label>
+            <div class="color-input">
+              <input type="color" id="borderColor" value="#738CA2">
+              <span class="color-value" id="borderColorValue">#738CA2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido -->
+      <div class="form-section">
+        <h2>📚 Contenido de la Ley</h2>
+        <div class="upload-section">
+          <label>Importar desde archivo:</label>
+          <div class="upload-buttons">
+            <label class="upload-btn">
+              📄 Subir PDF
+              <input type="file" accept=".pdf" onchange="uploadPDF(this)" style="display: none;">
+            </label>
+            <label class="upload-btn">
+              📖 Subir EPUB
+              <input type="file" accept=".epub" onchange="uploadEPUB(this)" style="display: none;">
+            </label>
+          </div>
+          <div id="uploadStatus" class="upload-status"></div>
+        </div>
+        <div class="template-buttons">
+          <button type="button" class="template-btn" onclick="loadTemplate('basic')">Plantilla Básica</button>
+          <button type="button" class="template-btn" onclick="loadTemplate('example')">Ejemplo Completo</button>
+        </div>
+        <div class="form-group">
+          <label for="content">Estructura JSON del contenido</label>
+          <textarea id="content" placeholder='{"units": [{"id": "1", "label": "Título I", "content": "..."}]}'></textarea>
+        </div>
+      </div>
+
+      <!-- Vista previa -->
+      <div class="form-section">
+        <h2>👁️ Vista Previa</h2>
+        <div class="preview" id="preview">
+          <div class="preview-header" id="previewHeader">
+            <div class="preview-icon">📖</div>
+            <div class="preview-brand">
+              <div class="preview-eyebrow" id="previewEyebrow">ESTUDIO</div>
+              <div class="preview-title" id="previewTitle">Mi Ley</div>
+              <div class="preview-desc" id="previewDesc">Aplicación de estudio</div>
+            </div>
+          </div>
+          <div class="preview-panel" id="previewPanel">
+            <h3>Ejemplo de panel</h3>
+            <p>Este es un ejemplo de cómo se verá el contenido en tu aplicación.</p>
+          </div>
+          <div class="preview-nav" id="previewNav">
+            <div class="preview-nav-item">
+              <div class="preview-nav-icon">🏠</div>
+              <span>Inicio</span>
+            </div>
+            <div class="preview-nav-item">
+              <div class="preview-nav-icon">📚</div>
+              <span>Biblioteca</span>
+            </div>
+            <div class="preview-nav-item">
+              <div class="preview-nav-icon">🃏</div>
+              <span>Tarjetas</span>
+            </div>
+            <div class="preview-nav-item">
+              <div class="preview-nav-icon">✓</div>
+              <span>Test</span>
+            </div>
+            <div class="preview-nav-item">
+              <div class="preview-nav-icon">📊</div>
+              <span>Progreso</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" id="generateBtn">🚀 Generar Proyecto</button>
+
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Generando proyecto...</p>
+      </div>
+
+      <div class="success" id="success">
+        ✅ ¡Proyecto generado con éxito! La descarga comenzará automáticamente.
+      </div>
+
+      <div class="error" id="error"></div>
+    </form>
+  </div>
+
+  <script>
+    // Actualizar vista previa en tiempo real
+    const colorInputs = ['primaryColor', 'backgroundColor', 'textColor', 'borderColor'];
+    colorInputs.forEach(id => {
+      const input = document.getElementById(id);
+      const value = document.getElementById(id + 'Value');
+      input.addEventListener('input', () => {
+        value.textContent = input.value.toUpperCase();
+        updatePreview();
+      });
+    });
+
+    document.getElementById('appName').addEventListener('input', updatePreview);
+    document.getElementById('appDescription').addEventListener('input', updatePreview);
+
+    function updatePreview() {
+      const primaryColor = document.getElementById('primaryColor').value;
+      const backgroundColor = document.getElementById('backgroundColor').value;
+      const textColor = document.getElementById('textColor').value;
+      const borderColor = document.getElementById('borderColor').value;
+      const appName = document.getElementById('appName').value;
+      const appDescription = document.getElementById('appDescription').value;
+
+      const previewHeader = document.getElementById('previewHeader');
+      const previewPanel = document.getElementById('previewPanel');
+      const previewNav = document.getElementById('previewNav');
+
+      previewHeader.style.background = backgroundColor;
+      previewHeader.style.color = textColor;
+
+      previewPanel.style.background = 'white';
+      previewPanel.style.borderColor = borderColor;
+      previewPanel.style.color = textColor;
+
+      previewNav.style.background = 'white';
+      previewNav.style.borderColor = borderColor;
+      previewNav.style.color = borderColor;
+
+      document.getElementById('previewEyebrow').style.color = primaryColor;
+      document.getElementById('previewTitle').textContent = appName;
+      document.getElementById('previewDesc').textContent = appDescription;
+    }
+
+    function loadTemplate(type) {
+      let content;
+      if (type === 'basic') {
+        content = {
+          units: [
+            {
+              id: "1",
+              label: "Título I",
+              content: "Contenido del primer título...",
+              sections: []
+            }
+          ]
+        };
+      } else if (type === 'example') {
+        content = {
+          units: [
+            {
+              id: "1",
+              label: "Título Preliminar",
+              content: "Artículo 1. España se constituye en un Estado social y democrático de Derecho...",
+              sections: [
+                { id: "1.1", label: "Capítulo I", content: "Contenido del capítulo..." }
+              ]
+            },
+            {
+              id: "2",
+              label: "Título I",
+              content: "Artículo 10. La dignidad de la persona...",
+              sections: []
+            }
+          ]
+        };
+      }
+      document.getElementById('content').value = JSON.stringify(content, null, 2);
+    }
+
+    function applyPalette(palette) {
+      const palettes = {
+        blue: {
+          primary: '#125B95',
+          background: '#F5F9FC',
+          text: '#12304A',
+          border: '#738CA2'
+        },
+        green: {
+          primary: '#146342',
+          background: '#F0F9F4',
+          text: '#0A2E1D',
+          border: '#4A7C5E'
+        },
+        red: {
+          primary: '#A12C2C',
+          background: '#FCF5F5',
+          text: '#4A0E0E',
+          border: '#7C4A4A'
+        },
+        purple: {
+          primary: '#6B21A8',
+          background: '#F9F5FC',
+          text: '#3D0F63',
+          border: '#8B5FB0'
+        },
+        orange: {
+          primary: '#C2410C',
+          background: '#FFF7ED',
+          text: '#431407',
+          border: '#9A3412'
+        },
+        teal: {
+          primary: '#0D9488',
+          background: '#F0FDFA',
+          text: '#134E4A',
+          border: '#14B8A6'
+        },
+        pink: {
+          primary: '#BE185D',
+          background: '#FDF2F8',
+          text: '#831843',
+          border: '#DB2777'
+        },
+        indigo: {
+          primary: '#4338CA',
+          background: '#EEF2FF',
+          text: '#312E81',
+          border: '#6366F1'
+        },
+        slate: {
+          primary: '#475569',
+          background: '#F8FAFC',
+          text: '#1E293B',
+          border: '#64748B'
+        },
+        amber: {
+          primary: '#B45309',
+          background: '#FFFBEB',
+          text: '#78350F',
+          border: '#D97706'
+        },
+        cyan: {
+          primary: '#0891B2',
+          background: '#ECFEFF',
+          text: '#164E63',
+          border: '#06B6D4'
+        },
+        emerald: {
+          primary: '#059669',
+          background: '#ECFDF5',
+          text: '#064E3B',
+          border: '#10B981'
+        }
+      };
+
+      const colors = palettes[palette];
+      if (colors) {
+        document.getElementById('primaryColor').value = colors.primary;
+        document.getElementById('backgroundColor').value = colors.background;
+        document.getElementById('textColor').value = colors.text;
+        document.getElementById('borderColor').value = colors.border;
+
+        document.getElementById('primaryColorValue').textContent = colors.primary.toUpperCase();
+        document.getElementById('backgroundColorValue').textContent = colors.background.toUpperCase();
+        document.getElementById('textColorValue').textContent = colors.text.toUpperCase();
+        document.getElementById('borderColorValue').textContent = colors.border.toUpperCase();
+
+        updatePreview();
+      }
+    }
+
+    async function uploadPDF(input) {
+      const file = input.files[0];
+      if (!file) return;
+
+      const status = document.getElementById('uploadStatus');
+      status.className = 'upload-status loading';
+      status.textContent = '⏳ Procesando PDF...';
+
+      const formData = new FormData();
+      formData.append('file', file);
+
+      try {
+        const response = await fetch('/api/upload-pdf', {
+          method: 'POST',
+          body: formData
+        });
+
+        if (!response.ok) {
+          const error = await response.json();
+          throw new Error(error.error || 'Error al procesar PDF');
+        }
+
+        const data = await response.json();
+        document.getElementById('content').value = JSON.stringify(data, null, 2);
+
+        status.className = 'upload-status success';
+        status.textContent = `✅ PDF procesado exitosamente. ${data.units.length} unidades detectadas, ${data.totalPages} páginas.`;
+
+        setTimeout(() => status.className = 'upload-status', 5000);
+      } catch (error) {
+        status.className = 'upload-status error';
+        status.textContent = '❌ Error: ' + error.message;
+        setTimeout(() => status.className = 'upload-status', 5000);
+      }
+
+      input.value = '';
+    }
+
+    async function uploadEPUB(input) {
+      const file = input.files[0];
+      if (!file) return;
+
+      const status = document.getElementById('uploadStatus');
+      status.className = 'upload-status loading';
+      status.textContent = '⏳ Procesando EPUB...';
+
+      const formData = new FormData();
+      formData.append('file', file);
+
+      try {
+        const response = await fetch('/api/upload-epub', {
+          method: 'POST',
+          body: formData
+        });
+
+        if (!response.ok) {
+          const error = await response.json();
+          throw new Error(error.error || 'Error al procesar EPUB');
+        }
+
+        const data = await response.json();
+        document.getElementById('content').value = JSON.stringify(data, null, 2);
+
+        status.className = 'upload-status success';
+        status.textContent = `✅ EPUB procesado exitosamente. Título: "${data.title}", ${data.units.length} unidades detectadas.`;
+
+        setTimeout(() => status.className = 'upload-status', 5000);
+      } catch (error) {
+        status.className = 'upload-status error';
+        status.textContent = '❌ Error: ' + error.message;
+        setTimeout(() => status.className = 'upload-status', 5000);
+      }
+
+      input.value = '';
+    }
+
+    // Cargar plantilla básica al inicio
+    loadTemplate('basic');
+    updatePreview();
+
+    // Generar proyecto
+    document.getElementById('generatorForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const btn = document.getElementById('generateBtn');
+      const loading = document.getElementById('loading');
+      const success = document.getElementById('success');
+      const error = document.getElementById('error');
+
+      const appName = document.getElementById('appName').value;
+      const appDescription = document.getElementById('appDescription').value;
+      const primaryColor = document.getElementById('primaryColor').value;
+      const backgroundColor = document.getElementById('backgroundColor').value;
+      const textColor = document.getElementById('textColor').value;
+      const borderColor = document.getElementById('borderColor').value;
+      const contentText = document.getElementById('content').value;
+
+      let content;
+      try {
+        content = JSON.parse(contentText);
+      } catch (err) {
+        error.textContent = '❌ Error: El JSON del contenido no es válido';
+        error.classList.add('active');
+        setTimeout(() => error.classList.remove('active'), 5000);
+        return;
+      }
+
+      btn.disabled = true;
+      loading.classList.add('active');
+      success.classList.remove('active');
+      error.classList.remove('active');
+
+      try {
+        const response = await fetch('/api/generate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            appName,
+            appDescription,
+            primaryColor,
+            backgroundColor,
+            textColor,
+            borderColor,
+            content
+          })
+        });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          throw new Error(errorData.error || 'Error al generar el proyecto');
+        }
+
+        // Descargar archivo
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${appName.replace(/\s+/g, '-')}-proyecto.zip`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+
+        success.classList.add('active');
+        setTimeout(() => success.classList.remove('active'), 5000);
+
+      } catch (err) {
+        error.textContent = '❌ Error: ' + err.message;
+        error.classList.add('active');
+        setTimeout(() => error.classList.remove('active'), 5000);
+      } finally {
+        btn.disabled = false;
+        loading.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

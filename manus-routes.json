@@ -1,0 +1,1 @@
+{"routes":[{"path":"/","title":"Inicio"},{"path":"/biblioteca","title":"Biblioteca"},{"path":"/tarjetas","title":"Tarjetas"},{"path":"/test","title":"Test"},{"path":"/progreso","title":"Progreso"},{"path":"/unidad/:id","title":"Detalle de unidad"}]}

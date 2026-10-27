@@ -1,0 +1,17 @@
+{
+  "appId": "com.lgss.c1",
+  "appName": "LGSS Seguridad Social C1",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "icon": "assets/icon-1024x1024.png",
+  "splash": {
+    "backgroundColor": "#F5F9FC",
+    "androidSplashResourceName": "splash",
+    "androidScaleType": "CENTER_CROP",
+    "android9Patch": false,
+    "iosSplashStyle": "SCREEN",
+    "iosImageScaleType": "ASPECT_FILL"
+  }
+}

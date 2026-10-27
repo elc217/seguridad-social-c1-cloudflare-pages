@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">LGSS Seguridad Social C1</string>
+    <string name="title_activity_main">LGSS Seguridad Social C1</string>
+    <string name="package_name">com.lgss.c1</string>
+    <string name="custom_url_scheme">com.lgss.c1</string>
+</resources>

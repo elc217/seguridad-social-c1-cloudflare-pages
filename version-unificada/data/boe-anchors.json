@@ -1,0 +1,1887 @@
+{
+  "sourceUrl": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724",
+  "verifiedAt": "2026-10-26T00:25:31.301Z",
+  "officialHtmlSha256": "217ee9261c458ac270e0b38500e93712e1fe421efbaf5a2da59d9ba05ff6c925",
+  "entries": {
+    "rdl8-2015:art:unico": {
+      "anchor": "aunico",
+      "heading": "Artículo único. Aprobación del texto refundido de la Ley General de la Seguridad Social."
+    },
+    "rdl8-2015:disp-adicional:unica": {
+      "anchor": "daunica",
+      "heading": "Disposición adicional única. Remisiones normativas."
+    },
+    "rdl8-2015:disp-derogatoria:unica": {
+      "anchor": "ddunica",
+      "heading": "Disposición derogatoria única. Derogación normativa."
+    },
+    "rdl8-2015:disp-final:unica": {
+      "anchor": "dfunica",
+      "heading": "Disposición final única. Entrada en vigor."
+    },
+    "lgss:art:001": {
+      "anchor": "a1",
+      "heading": "Artículo 1. Derecho de los españoles a la Seguridad Social."
+    },
+    "lgss:art:002": {
+      "anchor": "a2",
+      "heading": "Artículo 2. Principios y fines de la Seguridad Social."
+    },
+    "lgss:art:003": {
+      "anchor": "a3",
+      "heading": "Artículo 3. Irrenunciabilidad de los derechos de la Seguridad Social."
+    },
+    "lgss:art:004": {
+      "anchor": "a4",
+      "heading": "Artículo 4. Delimitación de funciones."
+    },
+    "lgss:art:005": {
+      "anchor": "a5",
+      "heading": "Artículo 5. Competencias del Ministerio de Empleo y Seguridad Social y de otros departamentos ministeriales."
+    },
+    "lgss:art:006": {
+      "anchor": "a6",
+      "heading": "Artículo 6. Coordinación de funciones afines."
+    },
+    "lgss:art:007": {
+      "anchor": "a7",
+      "heading": "Artículo 7. Extensión del campo de aplicación."
+    },
+    "lgss:art:008": {
+      "anchor": "a8",
+      "heading": "Artículo 8. Prohibición de inclusión múltiple obligatoria."
+    },
+    "lgss:art:009": {
+      "anchor": "a9",
+      "heading": "Artículo 9. Estructura del sistema de la Seguridad Social."
+    },
+    "lgss:art:010": {
+      "anchor": "a10",
+      "heading": "Artículo 10. Regímenes especiales."
+    },
+    "lgss:art:011": {
+      "anchor": "a11",
+      "heading": "Artículo 11. Sistemas especiales."
+    },
+    "lgss:art:012": {
+      "anchor": "a12",
+      "heading": "Artículo 12. Familiares."
+    },
+    "lgss:art:013": {
+      "anchor": "a13",
+      "heading": "Artículo 13. Trabajadores con discapacidad."
+    },
+    "lgss:art:014": {
+      "anchor": "a14",
+      "heading": "Artículo 14. Socios trabajadores y socios de trabajo de cooperativas."
+    },
+    "lgss:art:015": {
+      "anchor": "a15",
+      "heading": "Artículo 15. Obligatoriedad y alcance de la afiliación."
+    },
+    "lgss:art:016": {
+      "anchor": "a16",
+      "heading": "Artículo 16. Afiliación, altas, bajas y variaciones de datos."
+    },
+    "lgss:art:017": {
+      "anchor": "a17",
+      "heading": "Artículo 17. Obligaciones de la Administración de la Seguridad Social y derecho a la información."
+    },
+    "lgss:art:018": {
+      "anchor": "a18",
+      "heading": "Artículo 18. Obligatoriedad."
+    },
+    "lgss:art:019": {
+      "anchor": "a19",
+      "heading": "Artículo 19. Bases y tipos de cotización."
+    },
+    "lgss:art:019-bis": {
+      "anchor": "a1-4",
+      "heading": "Artículo 19 bis. Cotización adicional de solidaridad."
+    },
+    "lgss:art:020": {
+      "anchor": "a20",
+      "heading": "Artículo 20. Adquisición, mantenimiento, pérdida y reintegro de beneficios en la cotización."
+    },
+    "lgss:art:021": {
+      "anchor": "a21",
+      "heading": "Artículo 21. Competencia."
+    },
+    "lgss:art:022": {
+      "anchor": "a22",
+      "heading": "Artículo 22. Liquidación e ingreso de las cuotas y demás recursos."
+    },
+    "lgss:art:023": {
+      "anchor": "a23",
+      "heading": "Artículo 23. Aplazamiento de pago."
+    },
+    "lgss:art:024": {
+      "anchor": "a24",
+      "heading": "Artículo 24. Prescripción."
+    },
+    "lgss:art:025": {
+      "anchor": "a25",
+      "heading": "Artículo 25. Prelación de créditos."
+    },
+    "lgss:art:026": {
+      "anchor": "a26",
+      "heading": "Artículo 26. Devolución de ingresos indebidos, reembolso de los costes de las garantías y pago de cantidades declaradas por sentencia."
+    },
+    "lgss:art:027": {
+      "anchor": "a27",
+      "heading": "Artículo 27. Transacciones sobre los derechos de la Seguridad Social."
+    },
+    "lgss:art:028": {
+      "anchor": "a28",
+      "heading": "Artículo 28. Efectos de la falta de pago en plazo reglamentario."
+    },
+    "lgss:art:029": {
+      "anchor": "a29",
+      "heading": "Artículo 29. Cumplimiento de obligaciones en materia de liquidación de cuotas y compensación."
+    },
+    "lgss:art:030": {
+      "anchor": "a30",
+      "heading": "Artículo 30. Recargos por ingreso fuera de plazo."
+    },
+    "lgss:art:031": {
+      "anchor": "a31",
+      "heading": "Artículo 31. Interés de demora."
+    },
+    "lgss:art:032": {
+      "anchor": "a32",
+      "heading": "Artículo 32. Imputación de pagos."
+    },
+    "lgss:art:033": {
+      "anchor": "a33",
+      "heading": "Artículo 33. Reclamaciones de deudas."
+    },
+    "lgss:art:034": {
+      "anchor": "a34",
+      "heading": "Artículo 34. Actas de liquidación de cuotas."
+    },
+    "lgss:art:035": {
+      "anchor": "a35",
+      "heading": "Artículo 35. Determinación de las deudas por cuotas."
+    },
+    "lgss:art:036": {
+      "anchor": "a36",
+      "heading": "Artículo 36. Facultades de comprobación."
+    },
+    "lgss:art:037": {
+      "anchor": "a37",
+      "heading": "Artículo 37. Medidas cautelares."
+    },
+    "lgss:art:038": {
+      "anchor": "a38",
+      "heading": "Artículo 38. Providencia de apremio, otros actos del procedimiento ejecutivo y procedimiento de deducción."
+    },
+    "lgss:art:039": {
+      "anchor": "a39",
+      "heading": "Artículo 39. Tercerías."
+    },
+    "lgss:art:040": {
+      "anchor": "a40",
+      "heading": "Artículo 40. Deber de información por parte de las personas y entidades sin personalidad, entidades financieras, funcionarios públicos, profesionales oficiales y autoridades."
+    },
+    "lgss:art:041": {
+      "anchor": "a41",
+      "heading": "Artículo 41. Levantamiento de bienes embargables."
+    },
+    "lgss:art:042": {
+      "anchor": "a42",
+      "heading": "Artículo 42. Acción protectora del sistema de la Seguridad Social."
+    },
+    "lgss:art:043": {
+      "anchor": "a43",
+      "heading": "Artículo 43. Mejoras voluntarias."
+    },
+    "lgss:art:044": {
+      "anchor": "a44",
+      "heading": "Artículo 44. Caracteres de las prestaciones."
+    },
+    "lgss:art:045": {
+      "anchor": "a45",
+      "heading": "Artículo 45. Responsabilidad en orden a las prestaciones."
+    },
+    "lgss:art:046": {
+      "anchor": "a46",
+      "heading": "Artículo 46. Pago de las pensiones contributivas derivadas de contingencias comunes y de las pensiones no contributivas."
+    },
+    "lgss:art:047": {
+      "anchor": "a47",
+      "heading": "Artículo 47. Requisito de estar al corriente en el pago de las cotizaciones."
+    },
+    "lgss:art:048": {
+      "anchor": "a48",
+      "heading": "Artículo 48. Transformación de los plazos en días."
+    },
+    "lgss:art:049": {
+      "anchor": "a49",
+      "heading": "Artículo 49. Efecto de las cotizaciones superpuestas en varios regímenes en orden a las pensiones de la Seguridad Social."
+    },
+    "lgss:art:050": {
+      "anchor": "a50",
+      "heading": "Artículo 50. Cómputo de ingresos a efectos del reconocimiento o mantenimiento del derecho a prestaciones."
+    },
+    "lgss:art:050-bis": {
+      "anchor": "a5-2",
+      "heading": "Artículo 50 bis. Resolución provisional de pensiones reconocidas al amparo de normas internacionales."
+    },
+    "lgss:art:051": {
+      "anchor": "a51",
+      "heading": "Artículo 51. Residencia a efectos de prestaciones y de complementos por mínimos."
+    },
+    "lgss:art:052": {
+      "anchor": "a52",
+      "heading": "Artículo 52. Adopción de medidas cautelares."
+    },
+    "lgss:art:053": {
+      "anchor": "a53",
+      "heading": "Artículo 53. Prescripción."
+    },
+    "lgss:art:054": {
+      "anchor": "a54",
+      "heading": "Artículo 54. Caducidad."
+    },
+    "lgss:art:055": {
+      "anchor": "a55",
+      "heading": "Artículo 55. Reintegro de prestaciones indebidas."
+    },
+    "lgss:art:056": {
+      "anchor": "a56",
+      "heading": "Artículo 56. Consideración como pensiones públicas."
+    },
+    "lgss:art:057": {
+      "anchor": "a57",
+      "heading": "Artículo 57. Limitación de la cuantía inicial de las pensiones."
+    },
+    "lgss:art:058": {
+      "anchor": "a58",
+      "heading": "Artículo 58. Revalorización y garantía de mantenimiento del poder adquisitivo de las pensiones."
+    },
+    "lgss:art:059": {
+      "anchor": "a59",
+      "heading": "Artículo 59. Complementos para pensiones inferiores a la mínima."
+    },
+    "lgss:art:060": {
+      "anchor": "a60",
+      "heading": "Artículo 60. Complemento de pensiones contributivas para la reducción de la brecha de género."
+    },
+    "lgss:art:061": {
+      "anchor": "a61",
+      "heading": "Artículo 61. Pensiones extraordinarias originadas por actos de terrorismo."
+    },
+    "lgss:art:062": {
+      "anchor": "a62",
+      "heading": "Artículo 62. Revalorización."
+    },
+    "lgss:art:063": {
+      "anchor": "a63",
+      "heading": "Artículo 63. Objeto."
+    },
+    "lgss:art:064": {
+      "anchor": "a64",
+      "heading": "Artículo 64. Concepto."
+    },
+    "lgss:art:065": {
+      "anchor": "a65",
+      "heading": "Artículo 65. Contenido de las ayudas asistenciales."
+    },
+    "lgss:art:066": {
+      "anchor": "a66",
+      "heading": "Artículo 66. Enumeración."
+    },
+    "lgss:art:067": {
+      "anchor": "a67",
+      "heading": "Artículo 67. Estructura y competencias."
+    },
+    "lgss:art:068": {
+      "anchor": "a68",
+      "heading": "Artículo 68. Naturaleza jurídica."
+    },
+    "lgss:art:069": {
+      "anchor": "a69",
+      "heading": "Artículo 69. Participación en la gestión."
+    },
+    "lgss:art:070": {
+      "anchor": "a70",
+      "heading": "Artículo 70. Relaciones y servicios internacionales."
+    },
+    "lgss:art:071": {
+      "anchor": "a71",
+      "heading": "Artículo 71. Suministro de información a la Administración de la Seguridad Social."
+    },
+    "lgss:art:072": {
+      "anchor": "a72",
+      "heading": "Artículo 72. Registro de Prestaciones Sociales Públicas."
+    },
+    "lgss:art:073": {
+      "anchor": "a73",
+      "heading": "Artículo 73. Creación."
+    },
+    "lgss:art:074": {
+      "anchor": "a74",
+      "heading": "Artículo 74. Tesorería General de la Seguridad Social."
+    },
+    "lgss:art:074-bis": {
+      "anchor": "a7-2",
+      "heading": "Artículo 74 bis. Gerencia de Informática de la Seguridad Social."
+    },
+    "lgss:art:075": {
+      "anchor": "a75",
+      "heading": "Artículo 75. Reserva de nombre."
+    },
+    "lgss:art:076": {
+      "anchor": "a76",
+      "heading": "Artículo 76. Exenciones tributarias y otros beneficios."
+    },
+    "lgss:art:077": {
+      "anchor": "a77",
+      "heading": "Artículo 77. Reserva de datos."
+    },
+    "lgss:art:078": {
+      "anchor": "a78",
+      "heading": "Artículo 78. Régimen de personal."
+    },
+    "lgss:art:079": {
+      "anchor": "a79",
+      "heading": "Artículo 79. Enumeración."
+    },
+    "lgss:art:080": {
+      "anchor": "a80",
+      "heading": "Artículo 80. Definición y objeto."
+    },
+    "lgss:art:081": {
+      "anchor": "a81",
+      "heading": "Artículo 81. Constitución de las mutuas colaboradoras con la Seguridad Social."
+    },
+    "lgss:art:082": {
+      "anchor": "a82",
+      "heading": "Artículo 82. Particularidades de las prestaciones y servicios gestionados."
+    },
+    "lgss:art:083": {
+      "anchor": "a83",
+      "heading": "Artículo 83. Régimen de opción de los empresarios asociados y de los trabajadores por cuenta propia adheridos."
+    },
+    "lgss:art:084": {
+      "anchor": "a84",
+      "heading": "Artículo 84. Régimen económico-financiero."
+    },
+    "lgss:art:085": {
+      "anchor": "a85",
+      "heading": "Artículo 85. Enumeración."
+    },
+    "lgss:art:086": {
+      "anchor": "a86",
+      "heading": "Artículo 86. La Junta General."
+    },
+    "lgss:art:087": {
+      "anchor": "a87",
+      "heading": "Artículo 87. La Junta Directiva."
+    },
+    "lgss:art:088": {
+      "anchor": "a88",
+      "heading": "Artículo 88. El Director Gerente y el resto de personal de la mutua."
+    },
+    "lgss:art:089": {
+      "anchor": "a89",
+      "heading": "Artículo 89. La Comisión de Control y Seguimiento."
+    },
+    "lgss:art:090": {
+      "anchor": "a90",
+      "heading": "Artículo 90. La Comisión de Prestaciones Especiales."
+    },
+    "lgss:art:091": {
+      "anchor": "a91",
+      "heading": "Artículo 91. Incompatibilidades y responsabilidades de los miembros de los órganos de gobierno y de participación."
+    },
+    "lgss:art:092": {
+      "anchor": "a92",
+      "heading": "Artículo 92. Patrimonio de la Seguridad Social adscrito a las mutuas."
+    },
+    "lgss:art:093": {
+      "anchor": "a93",
+      "heading": "Artículo 93. Patrimonio histórico."
+    },
+    "lgss:art:094": {
+      "anchor": "a94",
+      "heading": "Artículo 94. Contratación."
+    },
+    "lgss:art:095": {
+      "anchor": "a95",
+      "heading": "Artículo 95. Resultado económico y reservas."
+    },
+    "lgss:art:096": {
+      "anchor": "a96",
+      "heading": "Artículo 96. Excedentes."
+    },
+    "lgss:art:097": {
+      "anchor": "a97",
+      "heading": "Artículo 97. Fondo de Contingencias Profesionales de la Seguridad Social."
+    },
+    "lgss:art:098": {
+      "anchor": "a98",
+      "heading": "Artículo 98. Competencias del Ministerio de Empleo y Seguridad Social."
+    },
+    "lgss:art:099": {
+      "anchor": "a99",
+      "heading": "Artículo 99. Derecho de información, quejas y reclamaciones."
+    },
+    "lgss:art:100": {
+      "anchor": "a100",
+      "heading": "Artículo 100. Medidas cautelares y responsabilidad mancomunada."
+    },
+    "lgss:art:101": {
+      "anchor": "a101",
+      "heading": "Artículo 101. Disolución y liquidación."
+    },
+    "lgss:art:102": {
+      "anchor": "a102",
+      "heading": "Artículo 102. Colaboración de las empresas."
+    },
+    "lgss:art:103": {
+      "anchor": "a103",
+      "heading": "Artículo 103. Patrimonio."
+    },
+    "lgss:art:104": {
+      "anchor": "a104",
+      "heading": "Artículo 104. Titularidad, adscripción, administración y custodia."
+    },
+    "lgss:art:105": {
+      "anchor": "a105",
+      "heading": "Artículo 105. Adquisición de bienes inmuebles."
+    },
+    "lgss:art:106": {
+      "anchor": "a106",
+      "heading": "Artículo 106. Enajenación de bienes inmuebles y de títulos valores."
+    },
+    "lgss:art:107": {
+      "anchor": "a107",
+      "heading": "Artículo 107. Arrendamiento y cesión de bienes inmuebles."
+    },
+    "lgss:art:108": {
+      "anchor": "a108",
+      "heading": "Artículo 108. Inembargabilidad."
+    },
+    "lgss:art:109": {
+      "anchor": "a109",
+      "heading": "Artículo 109. Recursos generales."
+    },
+    "lgss:art:110": {
+      "anchor": "a110",
+      "heading": "Artículo 110. Sistema financiero."
+    },
+    "lgss:art:111": {
+      "anchor": "a111",
+      "heading": "Artículo 111. Inversiones."
+    },
+    "lgss:art:112": {
+      "anchor": "a112",
+      "heading": "Artículo 112. Disposición general y normas reguladoras de la intervención."
+    },
+    "lgss:art:113": {
+      "anchor": "a113",
+      "heading": "Artículo 113. Modificación de créditos, remanentes e insuficiencias presupuestarias en el Instituto Nacional de Gestión Sanitaria."
+    },
+    "lgss:art:114": {
+      "anchor": "a114",
+      "heading": "Artículo 114. Amortización de adquisiciones."
+    },
+    "lgss:art:115": {
+      "anchor": "a115",
+      "heading": "Artículo 115. Plan anual de auditorías."
+    },
+    "lgss:art:116": {
+      "anchor": "a116",
+      "heading": "Artículo 116. Cuentas de la Seguridad Social."
+    },
+    "lgss:art:117": {
+      "anchor": "a117",
+      "heading": "Artículo 117. Constitución del Fondo de Reserva de la Seguridad Social."
+    },
+    "lgss:art:118": {
+      "anchor": "a118",
+      "heading": "Artículo 118. Dotación del Fondo."
+    },
+    "lgss:art:119": {
+      "anchor": "a119",
+      "heading": "Artículo 119. Determinación del excedente y de la cotización finalista."
+    },
+    "lgss:art:120": {
+      "anchor": "a120",
+      "heading": "Artículo 120. Procedimiento para la dotación del Fondo."
+    },
+    "lgss:art:121": {
+      "anchor": "a121",
+      "heading": "Artículo 121. Disposición de activos del Fondo."
+    },
+    "lgss:art:122": {
+      "anchor": "a122",
+      "heading": "Artículo 122. Gestión financiera del Fondo."
+    },
+    "lgss:art:123": {
+      "anchor": "a123",
+      "heading": "Artículo 123. Comité de Gestión del Fondo de Reserva de la Seguridad Social."
+    },
+    "lgss:art:124": {
+      "anchor": "a124",
+      "heading": "Artículo 124. Comisión Asesora de Inversiones del Fondo de Reserva de la Seguridad Social."
+    },
+    "lgss:art:125": {
+      "anchor": "a125",
+      "heading": "Artículo 125. Comisión de Seguimiento del Fondo de Reserva de la Seguridad Social."
+    },
+    "lgss:art:126": {
+      "anchor": "a126",
+      "heading": "Artículo 126. Carácter de las operaciones de gestión e imputación presupuestaria."
+    },
+    "lgss:art:127": {
+      "anchor": "a127",
+      "heading": "Artículo 127. Informe anual."
+    },
+    "lgss:art:127-bis": {
+      "anchor": "a1-5",
+      "heading": "Artículo 127 bis. Mecanismo de Equidad Intergeneracional."
+    },
+    "lgss:art:128": {
+      "anchor": "a128",
+      "heading": "Artículo 128. Contratación."
+    },
+    "lgss:art:129": {
+      "anchor": "a129",
+      "heading": "Artículo 129. Normas de procedimiento, autenticación y firma."
+    },
+    "lgss:art:130": {
+      "anchor": "a130",
+      "heading": "Artículo 130. Tramitación electrónica de procedimientos en materia de Seguridad Social."
+    },
+    "lgss:art:131": {
+      "anchor": "a131",
+      "heading": "Artículo 131. Aportaciones de datos de Seguridad Social por medios electrónicos."
+    },
+    "lgss:art:132": {
+      "anchor": "a132",
+      "heading": "Artículo 132. Notificaciones de actos administrativos por medios electrónicos."
+    },
+    "lgss:art:133": {
+      "anchor": "a133",
+      "heading": "Artículo 133. Competencias de la Inspección."
+    },
+    "lgss:art:134": {
+      "anchor": "a134",
+      "heading": "Artículo 134. Colaboración con la Inspección."
+    },
+    "lgss:art:135": {
+      "anchor": "a135",
+      "heading": "Artículo 135. Infracciones y sanciones."
+    },
+    "lgss:art:136": {
+      "anchor": "a136",
+      "heading": "Artículo 136. Extensión."
+    },
+    "lgss:art:137": {
+      "anchor": "a137",
+      "heading": "Artículo 137. Exclusiones."
+    },
+    "lgss:art:138": {
+      "anchor": "a138",
+      "heading": "Artículo 138. Inscripción de empresas."
+    },
+    "lgss:art:139": {
+      "anchor": "a139",
+      "heading": "Artículo 139. Afiliación, altas y bajas."
+    },
+    "lgss:art:140": {
+      "anchor": "a140",
+      "heading": "Artículo 140. Procedimiento y plazos."
+    },
+    "lgss:art:141": {
+      "anchor": "a141",
+      "heading": "Artículo 141. Sujetos obligados."
+    },
+    "lgss:art:142": {
+      "anchor": "a142",
+      "heading": "Artículo 142. Sujeto responsable."
+    },
+    "lgss:art:143": {
+      "anchor": "a143",
+      "heading": "Artículo 143. Nulidad de pactos."
+    },
+    "lgss:art:144": {
+      "anchor": "a144",
+      "heading": "Artículo 144. Duración de la obligación de cotizar."
+    },
+    "lgss:art:145": {
+      "anchor": "a145",
+      "heading": "Artículo 145. Tipo de cotización."
+    },
+    "lgss:art:146": {
+      "anchor": "a146",
+      "heading": "Artículo 146. Cotización por accidentes de trabajo y enfermedades profesionales."
+    },
+    "lgss:art:147": {
+      "anchor": "a147",
+      "heading": "Artículo 147. Base de cotización."
+    },
+    "lgss:art:148": {
+      "anchor": "a148",
+      "heading": "Artículo 148. Topes máximo y mínimo de la base de cotización."
+    },
+    "lgss:art:149": {
+      "anchor": "a149",
+      "heading": "Artículo 149. Cotización adicional por horas extraordinarias."
+    },
+    "lgss:art:150": {
+      "anchor": "a150",
+      "heading": "Artículo 150. Normalización."
+    },
+    "lgss:art:151": {
+      "anchor": "a151",
+      "heading": "Artículo 151. Cotización adicional en contratos de duración determinada."
+    },
+    "lgss:art:152": {
+      "anchor": "a152",
+      "heading": "Artículo 152. Cotización al Régimen General a partir de la edad de jubilación."
+    },
+    "lgss:art:153": {
+      "anchor": "a153",
+      "heading": "Artículo 153. Cotización en supuestos de compatibilidad de jubilación y trabajo."
+    },
+    "lgss:art:153-bis": {
+      "anchor": "a1-2",
+      "heading": "Artículo 153 bis. Cotización en los supuestos de reducción de jornada o suspensión de contrato."
+    },
+    "lgss:art:153-ter": {
+      "anchor": "a1-3",
+      "heading": "Artículo 153 ter. Cotización de las personas pensionistas de jubilación cuando realicen actividades artísticas."
+    },
+    "lgss:art:154": {
+      "anchor": "a",
+      "heading": "Artículo 154. Normas generales."
+    },
+    "lgss:art:155": {
+      "anchor": "a155",
+      "heading": "Artículo 155. Alcance de la acción protectora."
+    },
+    "lgss:art:156": {
+      "anchor": "a156",
+      "heading": "Artículo 156. Concepto de accidente de trabajo."
+    },
+    "lgss:art:157": {
+      "anchor": "a157",
+      "heading": "Artículo 157. Concepto de enfermedad profesional."
+    },
+    "lgss:art:158": {
+      "anchor": "a158",
+      "heading": "Artículo 158. Concepto de accidente no laboral y de enfermedad común."
+    },
+    "lgss:art:159": {
+      "anchor": "a159",
+      "heading": "Artículo 159. Concepto de las restantes contingencias."
+    },
+    "lgss:art:160": {
+      "anchor": "a160",
+      "heading": "Artículo 160. Riesgos catastróficos."
+    },
+    "lgss:art:161": {
+      "anchor": "a161",
+      "heading": "Artículo 161. Cuantía de las prestaciones."
+    },
+    "lgss:art:162": {
+      "anchor": "a162",
+      "heading": "Artículo 162. Caracteres de las prestaciones."
+    },
+    "lgss:art:163": {
+      "anchor": "a163",
+      "heading": "Artículo 163. Incompatibilidad de pensiones."
+    },
+    "lgss:art:164": {
+      "anchor": "a164",
+      "heading": "Artículo 164. Recargo de las prestaciones económicas derivadas de accidente de trabajo o enfermedad profesional."
+    },
+    "lgss:art:165": {
+      "anchor": "a165",
+      "heading": "Artículo 165. Condiciones del derecho a las prestaciones."
+    },
+    "lgss:art:166": {
+      "anchor": "a166",
+      "heading": "Artículo 166. Situaciones asimiladas a la de alta."
+    },
+    "lgss:art:167": {
+      "anchor": "a167",
+      "heading": "Artículo 167. Responsabilidad en orden a las prestaciones."
+    },
+    "lgss:art:168": {
+      "anchor": "a168",
+      "heading": "Artículo 168. Supuestos especiales de responsabilidad en orden a las prestaciones."
+    },
+    "lgss:art:169": {
+      "anchor": "a169",
+      "heading": "Artículo 169. Concepto."
+    },
+    "lgss:art:170": {
+      "anchor": "a170",
+      "heading": "Artículo 170. Competencias sobre los procesos de incapacidad temporal."
+    },
+    "lgss:art:171": {
+      "anchor": "a171",
+      "heading": "Artículo 171. Prestación económica."
+    },
+    "lgss:art:172": {
+      "anchor": "a172",
+      "heading": "Artículo 172. Beneficiarios."
+    },
+    "lgss:art:173": {
+      "anchor": "a173",
+      "heading": "Artículo 173. Nacimiento y duración del derecho al subsidio."
+    },
+    "lgss:art:174": {
+      "anchor": "a174",
+      "heading": "Artículo 174. Extinción del derecho al subsidio."
+    },
+    "lgss:art:175": {
+      "anchor": "a175",
+      "heading": "Artículo 175. Pérdida o suspensión del derecho al subsidio."
+    },
+    "lgss:art:176": {
+      "anchor": "a176",
+      "heading": "Artículo 176. Periodos de observación y obligaciones especiales en caso de enfermedad profesional."
+    },
+    "lgss:art:177": {
+      "anchor": "a177",
+      "heading": "Artículo 177. Situaciones protegidas."
+    },
+    "lgss:art:178": {
+      "anchor": "a178",
+      "heading": "Artículo 178. Beneficiarios."
+    },
+    "lgss:art:179": {
+      "anchor": "a179",
+      "heading": "Artículo 179. Prestación económica"
+    },
+    "lgss:art:180": {
+      "anchor": "a180",
+      "heading": "Artículo 180. Pérdida o suspensión del derecho al subsidio por nacimiento y cuidado de menor."
+    },
+    "lgss:art:181": {
+      "anchor": "a181",
+      "heading": "Artículo 181. Personas beneficiarias."
+    },
+    "lgss:art:182": {
+      "anchor": "a182",
+      "heading": "Artículo 182. Prestación económica"
+    },
+    "lgss:art:183": {
+      "anchor": "a183",
+      "heading": "Artículo 183. Situación protegida."
+    },
+    "lgss:art:184": {
+      "anchor": "a184",
+      "heading": "Artículo 184. Beneficiarios."
+    },
+    "lgss:art:185": {
+      "anchor": "a185",
+      "heading": "Artículo 185. Prestación económica."
+    },
+    "lgss:art:186": {
+      "anchor": "a186",
+      "heading": "Artículo 186. Situación protegida."
+    },
+    "lgss:art:187": {
+      "anchor": "a187",
+      "heading": "Artículo 187. Prestación económica."
+    },
+    "lgss:art:188": {
+      "anchor": "a188",
+      "heading": "Artículo 188. Situación protegida."
+    },
+    "lgss:art:189": {
+      "anchor": "a189",
+      "heading": "Artículo 189. Prestación económica."
+    },
+    "lgss:art:190": {
+      "anchor": "a190",
+      "heading": "Artículo 190. Situación protegida."
+    },
+    "lgss:art:191": {
+      "anchor": "a191",
+      "heading": "Artículo 191. Beneficiarios."
+    },
+    "lgss:art:192": {
+      "anchor": "a192",
+      "heading": "Artículo 192. Prestación económica."
+    },
+    "lgss:art:193": {
+      "anchor": "a193",
+      "heading": "Artículo 193. Concepto."
+    },
+    "lgss:art:194": {
+      "anchor": "a194",
+      "heading": "Artículo 194. Grados de incapacidad permanente."
+    },
+    "lgss:art:195": {
+      "anchor": "a195",
+      "heading": "Artículo 195. Beneficiarios."
+    },
+    "lgss:art:196": {
+      "anchor": "a196",
+      "heading": "Artículo 196. Prestaciones económicas."
+    },
+    "lgss:art:197": {
+      "anchor": "a197",
+      "heading": "Artículo 197. Base reguladora de las pensiones de incapacidad permanente derivada de contingencias comunes."
+    },
+    "lgss:art:198": {
+      "anchor": "a198",
+      "heading": "Artículo 198. Compatibilidades en el percibo de prestaciones económicas por incapacidad permanente."
+    },
+    "lgss:art:199": {
+      "anchor": "a199",
+      "heading": "Artículo 199. Norma especial sobre incapacidad permanente derivada de enfermedad profesional."
+    },
+    "lgss:art:200": {
+      "anchor": "a200",
+      "heading": "Artículo 200. Calificación y revisión."
+    },
+    "lgss:art:201": {
+      "anchor": "a201",
+      "heading": "Artículo 201. Indemnizaciones por baremo."
+    },
+    "lgss:art:202": {
+      "anchor": "a202",
+      "heading": "Artículo 202. Beneficiarios."
+    },
+    "lgss:art:203": {
+      "anchor": "a203",
+      "heading": "Artículo 203. Incompatibilidad con las prestaciones por incapacidad permanente."
+    },
+    "lgss:art:204": {
+      "anchor": "a204",
+      "heading": "Artículo 204. Concepto."
+    },
+    "lgss:art:205": {
+      "anchor": "a205",
+      "heading": "Artículo 205. Beneficiarios."
+    },
+    "lgss:art:206": {
+      "anchor": "a206",
+      "heading": "Artículo 206. Jubilación anticipada por razón de la actividad."
+    },
+    "lgss:art:206-bis": {
+      "anchor": "a2-4",
+      "heading": "Artículo 206 bis. Jubilación anticipada en caso de discapacidad."
+    },
+    "lgss:art:207": {
+      "anchor": "a207",
+      "heading": "Artículo 207. Jubilación anticipada por causa no imputable al trabajador."
+    },
+    "lgss:art:208": {
+      "anchor": "a208",
+      "heading": "Artículo 208. Jubilación anticipada por voluntad del interesado."
+    },
+    "lgss:art:209": {
+      "anchor": "a209",
+      "heading": "Artículo 209. Base reguladora de la pensión de jubilación."
+    },
+    "lgss:art:210": {
+      "anchor": "a210",
+      "heading": "Artículo 210. Cuantía de la pensión."
+    },
+    "lgss:art:211": {
+      "anchor": "a211",
+      "heading": "Artículo 211. Factor de sostenibilidad de la pensión de jubilación."
+    },
+    "lgss:art:212": {
+      "anchor": "a212",
+      "heading": "Artículo 212. Imprescriptibilidad."
+    },
+    "lgss:art:213": {
+      "anchor": "a213",
+      "heading": "Artículo 213. Incompatibilidades."
+    },
+    "lgss:art:214": {
+      "anchor": "a214",
+      "heading": "Artículo 214. Pensión de jubilación activa."
+    },
+    "lgss:art:215": {
+      "anchor": "a215",
+      "heading": "Artículo 215. Jubilación parcial."
+    },
+    "lgss:art:216": {
+      "anchor": "a216",
+      "heading": "Artículo 216. Prestaciones."
+    },
+    "lgss:art:217": {
+      "anchor": "a217",
+      "heading": "Artículo 217. Sujetos causantes."
+    },
+    "lgss:art:218": {
+      "anchor": "a218",
+      "heading": "Artículo 218. Auxilio por defunción."
+    },
+    "lgss:art:219": {
+      "anchor": "a219",
+      "heading": "Artículo 219. Pensión de viudedad del cónyuge superviviente."
+    },
+    "lgss:art:220": {
+      "anchor": "a220",
+      "heading": "Artículo 220. Pensión de viudedad en supuestos de separación, divorcio o nulidad matrimonial."
+    },
+    "lgss:art:221": {
+      "anchor": "a221",
+      "heading": "Artículo 221. Pensión de viudedad de parejas de hecho."
+    },
+    "lgss:art:222": {
+      "anchor": "a222",
+      "heading": "Artículo 222. Prestación temporal de viudedad."
+    },
+    "lgss:art:223": {
+      "anchor": "a223",
+      "heading": "Artículo 223. Compatibilidad y extinción de las prestaciones de viudedad."
+    },
+    "lgss:art:224": {
+      "anchor": "a224",
+      "heading": "Artículo 224. Pensión de orfandad y prestación de orfandad."
+    },
+    "lgss:art:225": {
+      "anchor": "a225",
+      "heading": "Artículo 225. Compatibilidad de la pensión y prestación de orfandad."
+    },
+    "lgss:art:226": {
+      "anchor": "a226",
+      "heading": "Artículo 226. Prestaciones en favor de familiares."
+    },
+    "lgss:art:227": {
+      "anchor": "a227",
+      "heading": "Artículo 227. Indemnización especial a tanto alzado."
+    },
+    "lgss:art:228": {
+      "anchor": "a228",
+      "heading": "Artículo 228. Base reguladora de las prestaciones por muerte y supervivencia derivadas de contingencias comunes."
+    },
+    "lgss:art:229": {
+      "anchor": "a229",
+      "heading": "Artículo 229. Límite de las cuantías de las pensiones."
+    },
+    "lgss:art:230": {
+      "anchor": "a230",
+      "heading": "Artículo 230. Imprescriptibilidad."
+    },
+    "lgss:art:231": {
+      "anchor": "a231",
+      "heading": "Artículo 231. Impedimento para ser beneficiario de las prestaciones de muerte y supervivencia."
+    },
+    "lgss:art:232": {
+      "anchor": "a232",
+      "heading": "Artículo 232. Suspensión cautelar del abono de las prestaciones de muerte y supervivencia, en determinados supuestos."
+    },
+    "lgss:art:233": {
+      "anchor": "a233",
+      "heading": "Artículo 233. Incremento de las pensiones de orfandad y en favor de familiares, en determinados supuestos."
+    },
+    "lgss:art:234": {
+      "anchor": "a234",
+      "heading": "Artículo 234. Abono de las pensiones de orfandad, en determinados supuestos."
+    },
+    "lgss:art:235": {
+      "anchor": "a235",
+      "heading": "Artículo 235. Periodos de cotización asimilados por parto."
+    },
+    "lgss:art:236": {
+      "anchor": "a236",
+      "heading": "Artículo 236. Beneficios por cuidado de hijos o menores."
+    },
+    "lgss:art:237": {
+      "anchor": "a237",
+      "heading": "Artículo 237. Prestación familiar en su modalidad contributiva."
+    },
+    "lgss:art:238": {
+      "anchor": "a238",
+      "heading": "Artículo 238. Mejoras de la acción protectora."
+    },
+    "lgss:art:239": {
+      "anchor": "a239",
+      "heading": "Artículo 239. Mejora directa de las prestaciones."
+    },
+    "lgss:art:240": {
+      "anchor": "a240",
+      "heading": "Artículo 240. Modos de gestión de la mejora directa."
+    },
+    "lgss:art:241": {
+      "anchor": "a241",
+      "heading": "Artículo 241. Mejora por establecimiento de tipos de cotización adicionales."
+    },
+    "lgss:art:242": {
+      "anchor": "a242",
+      "heading": "Artículo 242. Incumplimientos en materia de accidentes de trabajo."
+    },
+    "lgss:art:243": {
+      "anchor": "a243",
+      "heading": "Artículo 243. Normas específicas para enfermedades profesionales."
+    },
+    "lgss:art:244": {
+      "anchor": "a244",
+      "heading": "Artículo 244. Responsabilidades por falta de reconocimientos médicos."
+    },
+    "lgss:art:245": {
+      "anchor": "a245",
+      "heading": "Artículo 245. Protección social."
+    },
+    "lgss:art:246": {
+      "anchor": "a246",
+      "heading": "Artículo 246. Cotización."
+    },
+    "lgss:art:247": {
+      "anchor": "a247",
+      "heading": "Artículo 247. Cómputo de los periodos de cotización."
+    },
+    "lgss:art:248": {
+      "anchor": "a248",
+      "heading": "Artículo 248. Cuantía de las prestaciones económicas."
+    },
+    "lgss:art:249": {
+      "anchor": "a249",
+      "heading": "Artículo 249. Acción protectora y cotización"
+    },
+    "lgss:art:249-bis": {
+      "anchor": "a2-3",
+      "heading": "Artículo 249 bis. Cómputo de los periodos de cotización en contratos de corta duración."
+    },
+    "lgss:art:249-ter": {
+      "anchor": "a2-2",
+      "heading": "Artículo 249 ter. Inactividad de artistas en espectáculos públicos incluidos en el Régimen General de la Seguridad Social."
+    },
+    "lgss:art:249-quater": {
+      "anchor": "a2-5",
+      "heading": "Artículo 249 quater. Compatibilidad de la pensión de jubilación con la actividad artística."
+    },
+    "lgss:art:250": {
+      "anchor": "a250",
+      "heading": "Artículo 250. Ámbito de aplicación."
+    },
+    "lgss:art:251": {
+      "anchor": "a251",
+      "heading": "Artículo 251. Acción protectora."
+    },
+    "lgss:art:252": {
+      "anchor": "a252",
+      "heading": "Artículo 252. Ámbito de aplicación."
+    },
+    "lgss:art:253": {
+      "anchor": "a253",
+      "heading": "Artículo 253. Reglas de inclusión."
+    },
+    "lgss:art:254": {
+      "anchor": "a254",
+      "heading": "Artículo 254. Afiliación, altas, bajas y variaciones de datos."
+    },
+    "lgss:art:255": {
+      "anchor": "a255",
+      "heading": "Artículo 255. Cotización."
+    },
+    "lgss:art:256": {
+      "anchor": "a256",
+      "heading": "Artículo 256. Acción protectora."
+    },
+    "lgss:art:257": {
+      "anchor": "a257",
+      "heading": "Artículo 257. Gestión y colaboración en la gestión."
+    },
+    "lgss:art:258": {
+      "anchor": "a258",
+      "heading": "Artículo 258. Conciertos para la prestación de servicios administrativos y sanitarios."
+    },
+    "lgss:art:259": {
+      "anchor": "a259",
+      "heading": "Artículo 259. Sistema financiero."
+    },
+    "lgss:art:260": {
+      "anchor": "a260",
+      "heading": "Artículo 260. Normas específicas en materia de accidentes de trabajo y enfermedades profesionales."
+    },
+    "lgss:art:261": {
+      "anchor": "a261",
+      "heading": "Artículo 261. Derecho supletorio."
+    },
+    "lgss:art:305": {
+      "anchor": "a305",
+      "heading": "Artículo 305. Extensión."
+    },
+    "lgss:art:306": {
+      "anchor": "a306",
+      "heading": "Artículo 306. Exclusiones."
+    },
+    "lgss:art:307": {
+      "anchor": "a307",
+      "heading": "Artículo 307. Afiliación, altas, bajas y variaciones de datos."
+    },
+    "lgss:art:308": {
+      "anchor": "a308",
+      "heading": "Artículo 308. Cotización y recaudación."
+    },
+    "lgss:art:309": {
+      "anchor": "a309",
+      "heading": "Artículo 309. Cotización en los supuestos de reconocimiento de una prestación económica de la Seguridad Social con anterioridad a la regularización anual."
+    },
+    "lgss:art:310": {
+      "anchor": "a310",
+      "heading": "Artículo 310. Cotización en supuestos de compatibilidad de jubilación y trabajo por cuenta propia."
+    },
+    "lgss:art:310-bis": {
+      "anchor": "a3-2",
+      "heading": "Artículo 310 bis. Cotización de los perceptores de pensión de jubilación cuando realicen actividades artísticas."
+    },
+    "lgss:art:311": {
+      "anchor": "a311",
+      "heading": "Artículo 311. Cotización al régimen especial a partir de la edad de jubilación."
+    },
+    "lgss:art:312": {
+      "anchor": "a312",
+      "heading": "Artículo 312. Base mínima de cotización para determinados trabajadores autónomos."
+    },
+    "lgss:art:313": {
+      "anchor": "a313",
+      "heading": "Artículo 313. Cotización en supuestos de pluriactividad."
+    },
+    "lgss:art:313-bis": {
+      "anchor": "a3-3",
+      "heading": "Artículo 313 bis. Cotización de los artistas con bajos ingresos integrados en el Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos."
+    },
+    "lgss:art:314": {
+      "anchor": "a314",
+      "heading": "Artículo 314. Alcance de la acción protectora."
+    },
+    "lgss:art:315": {
+      "anchor": "a315",
+      "heading": "Artículo 315. Cobertura de la incapacidad temporal."
+    },
+    "lgss:art:316": {
+      "anchor": "a316",
+      "heading": "Artículo 316. Cobertura de las contingencias profesionales."
+    },
+    "lgss:art:317": {
+      "anchor": "a317",
+      "heading": "Artículo 317. Acción protectora de los trabajadores autónomos económicamente dependientes."
+    },
+    "lgss:art:318": {
+      "anchor": "a318",
+      "heading": "Artículo 318. Normas aplicables."
+    },
+    "lgss:art:319": {
+      "anchor": "a319",
+      "heading": "Artículo 319. Efectos de las cuotas anteriores al alta."
+    },
+    "lgss:art:320": {
+      "anchor": "a320",
+      "heading": "Artículo 320. Base reguladora en los supuestos de cotización reducida y de cotización con 65 o más años de edad."
+    },
+    "lgss:art:321": {
+      "anchor": "a321",
+      "heading": "Artículo 321. Nacimiento y cuantía de la prestación de incapacidad temporal."
+    },
+    "lgss:art:322": {
+      "anchor": "a322",
+      "heading": "Artículo 322. Cuantía de la pensión de jubilación."
+    },
+    "lgss:art:323": {
+      "anchor": "a323",
+      "heading": "Artículo 323. Ámbito de aplicación."
+    },
+    "lgss:art:324": {
+      "anchor": "a324",
+      "heading": "Artículo 324. Reglas de inclusión."
+    },
+    "lgss:art:325": {
+      "anchor": "a325",
+      "heading": "Artículo 325. Especialidades en materia de cotización."
+    },
+    "lgss:art:326": {
+      "anchor": "a326",
+      "heading": "Artículo 326. Cobertura de la incapacidad temporal y de las contingencias profesionales."
+    },
+    "lgss:art:327": {
+      "anchor": "a327",
+      "heading": "Artículo 327. Objeto y ámbito de aplicación."
+    },
+    "lgss:art:328": {
+      "anchor": "a328",
+      "heading": "Artículo 328. Régimen jurídico."
+    },
+    "lgss:art:329": {
+      "anchor": "a329",
+      "heading": "Artículo 329. Acción protectora."
+    },
+    "lgss:art:330": {
+      "anchor": "a330",
+      "heading": "Artículo 330. Requisitos para el nacimiento del derecho a la protección."
+    },
+    "lgss:art:331": {
+      "anchor": "a331",
+      "heading": "Artículo 331. Situación legal de cese de actividad."
+    },
+    "lgss:art:332": {
+      "anchor": "a332",
+      "heading": "Artículo 332. Acreditación de la situación legal de cese de actividad."
+    },
+    "lgss:art:333": {
+      "anchor": "a333",
+      "heading": "Artículo 333. Trabajadores autónomos económicamente dependientes."
+    },
+    "lgss:art:334": {
+      "anchor": "a334",
+      "heading": "Artículo 334. Trabajadores autónomos por su condición de socios de sociedades de capital."
+    },
+    "lgss:art:335": {
+      "anchor": "a335",
+      "heading": "Artículo 335. Socios trabajadores de cooperativas de trabajo asociado."
+    },
+    "lgss:art:336": {
+      "anchor": "a336",
+      "heading": "Artículo 336. Trabajadores autónomos que ejercen su actividad profesional conjuntamente."
+    },
+    "lgss:art:337": {
+      "anchor": "a337",
+      "heading": "Artículo 337. Solicitud y nacimiento del derecho a la protección por cese de actividad."
+    },
+    "lgss:art:338": {
+      "anchor": "a338",
+      "heading": "Artículo 338. Duración de la prestación económica."
+    },
+    "lgss:art:339": {
+      "anchor": "a339",
+      "heading": "Artículo 339. Cuantía de la prestación económica por cese de la actividad."
+    },
+    "lgss:art:340": {
+      "anchor": "a340",
+      "heading": "Artículo 340. Suspensión del derecho a la protección."
+    },
+    "lgss:art:341": {
+      "anchor": "a341",
+      "heading": "Artículo 341. Extinción del derecho a la protección."
+    },
+    "lgss:art:342": {
+      "anchor": "a342",
+      "heading": "Artículo 342. Incompatibilidades."
+    },
+    "lgss:art:343": {
+      "anchor": "a343",
+      "heading": "Artículo 343. Cese de actividad, incapacidad temporal, maternidad y paternidad."
+    },
+    "lgss:art:344": {
+      "anchor": "a344",
+      "heading": "Artículo 344. Financiación, base y tipo de cotización."
+    },
+    "lgss:art:345": {
+      "anchor": "a345",
+      "heading": "Artículo 345. Recaudación."
+    },
+    "lgss:art:346": {
+      "anchor": "a346",
+      "heading": "Artículo 346. Órgano gestor."
+    },
+    "lgss:art:347": {
+      "anchor": "a347",
+      "heading": "Artículo 347. Obligaciones de los trabajadores autónomos."
+    },
+    "lgss:art:348": {
+      "anchor": "a348",
+      "heading": "Artículo 348. Reintegro de prestaciones indebidamente percibidas."
+    },
+    "lgss:art:349": {
+      "anchor": "a349",
+      "heading": "Artículo 349. Infracciones."
+    },
+    "lgss:art:350": {
+      "anchor": "a350",
+      "heading": "Artículo 350. Jurisdicción competente y reclamación previa."
+    },
+    "lgss:art:351": {
+      "anchor": "a351",
+      "heading": "Artículo 351. Enumeración."
+    },
+    "lgss:art:352": {
+      "anchor": "a352",
+      "heading": "Artículo 352. Beneficiarios."
+    },
+    "lgss:art:353": {
+      "anchor": "a353",
+      "heading": "Artículo 353. Cuantía de las asignaciones."
+    },
+    "lgss:art:354": {
+      "anchor": "a354",
+      "heading": "Artículo 354. Determinación del grado de discapacidad y de la necesidad del concurso de otra persona."
+    },
+    "lgss:art:355": {
+      "anchor": "a355",
+      "heading": "Artículo 355. Declaración y efectos de las variaciones familiares."
+    },
+    "lgss:art:356": {
+      "anchor": "a356",
+      "heading": "Artículo 356. Devengo y abono."
+    },
+    "lgss:art:357": {
+      "anchor": "a357",
+      "heading": "Artículo 357. Prestación y beneficiarios."
+    },
+    "lgss:art:358": {
+      "anchor": "a358",
+      "heading": "Artículo 358. Cuantía de la prestación."
+    },
+    "lgss:art:359": {
+      "anchor": "a359",
+      "heading": "Artículo 359. Beneficiarios."
+    },
+    "lgss:art:360": {
+      "anchor": "a360",
+      "heading": "Artículo 360. Cuantía."
+    },
+    "lgss:art:361": {
+      "anchor": "a361",
+      "heading": "Artículo 361. Incompatibilidades."
+    },
+    "lgss:art:362": {
+      "anchor": "a362",
+      "heading": "Artículo 362. Revalorización."
+    },
+    "lgss:art:363": {
+      "anchor": "a363",
+      "heading": "Artículo 363. Beneficiarios."
+    },
+    "lgss:art:364": {
+      "anchor": "a364",
+      "heading": "Artículo 364. Cuantía de la pensión."
+    },
+    "lgss:art:365": {
+      "anchor": "a365",
+      "heading": "Artículo 365. Efectos económicos de las pensiones."
+    },
+    "lgss:art:366": {
+      "anchor": "a366",
+      "heading": "Artículo 366. Compatibilidad de las pensiones."
+    },
+    "lgss:art:367": {
+      "anchor": "a367",
+      "heading": "Artículo 367. Calificación."
+    },
+    "lgss:art:368": {
+      "anchor": "a368",
+      "heading": "Artículo 368. Obligaciones de los beneficiarios."
+    },
+    "lgss:art:369": {
+      "anchor": "a369",
+      "heading": "Artículo 369. Beneficiarios."
+    },
+    "lgss:art:370": {
+      "anchor": "a370",
+      "heading": "Artículo 370. Cuantía de la pensión."
+    },
+    "lgss:art:371": {
+      "anchor": "a371",
+      "heading": "Artículo 371. Efectos económicos del reconocimiento del derecho."
+    },
+    "lgss:art:372": {
+      "anchor": "a372",
+      "heading": "Artículo 372. Obligaciones de los beneficiarios."
+    },
+    "lgss:art:373": {
+      "anchor": "a373",
+      "heading": "Artículo 373. Gestión."
+    },
+    "lgss:disp-adicional:primera": {
+      "anchor": "daprimera",
+      "heading": "Disposición adicional primera. Normas aplicables a los regímenes especiales."
+    },
+    "lgss:disp-adicional:segunda": {
+      "anchor": "dasegunda",
+      "heading": "Disposición adicional segunda. Protección de los trabajadores emigrantes."
+    },
+    "lgss:disp-adicional:tercera": {
+      "anchor": "datercera",
+      "heading": "Disposición adicional tercera. Inclusión en el Régimen General de la Seguridad Social de los funcionarios públicos y de otro personal de nuevo ingreso."
+    },
+    "lgss:disp-adicional:cuarta": {
+      "anchor": "dacuaa",
+      "heading": "Disposición adicional cuarta. Consideración de los servicios prestados en segundo puesto o actividad a las Administraciones Públicas."
+    },
+    "lgss:disp-adicional:quinta": {
+      "anchor": "daquinta",
+      "heading": "Disposición adicional quinta. Régimen de Seguridad Social de los asegurados que presten servicios en la Administración de la Unión Europea."
+    },
+    "lgss:disp-adicional:sexta": {
+      "anchor": "dasexta",
+      "heading": "Disposición adicional sexta. Estancias de formación, prácticas, colaboración o especialización."
+    },
+    "lgss:disp-adicional:septima": {
+      "anchor": "daseptima",
+      "heading": "Disposición adicional séptima. Régimen de la asistencia sanitaria de los funcionarios procedentes del extinguido Régimen Especial de Funcionarios de la Administración Local."
+    },
+    "lgss:disp-adicional:octava": {
+      "anchor": "daoctava",
+      "heading": "Disposición adicional octava. Gestión de las prestaciones económicas por maternidad y por paternidad."
+    },
+    "lgss:disp-adicional:novena": {
+      "anchor": "danovena",
+      "heading": "Disposición adicional novena. Instituto Social de la Marina."
+    },
+    "lgss:disp-adicional:decima": {
+      "anchor": "dadecima",
+      "heading": "Disposición adicional décima. Ingresos por venta de bienes y servicios prestados a terceros."
+    },
+    "lgss:disp-adicional:undecima": {
+      "anchor": "daundecima",
+      "heading": "Disposición adicional undécima. Competencias en materia de autorizaciones de gastos."
+    },
+    "lgss:disp-adicional:duodecima": {
+      "anchor": "daduodecima",
+      "heading": "Disposición adicional duodécima. Transferencia del Instituto Nacional de la Seguridad Social a las comunidades autónomas en relación a asegurados en otro Estado y que residen en España."
+    },
+    "lgss:disp-adicional:decimotercera": {
+      "anchor": "dadecimotercera",
+      "heading": "Disposición adicional decimotercera. Régimen jurídico del convenio especial a suscribir en determinados expedientes de despido colectivo."
+    },
+    "lgss:disp-adicional:decimocuarta": {
+      "anchor": "dadecimocuaa",
+      "heading": "Disposición adicional decimocuarta. Régimen jurídico de los convenios especiales de los cuidadores no profesionales de las personas en situación de dependencia."
+    },
+    "lgss:disp-adicional:decimoquinta": {
+      "anchor": "dadecimoquinta",
+      "heading": "Disposición adicional decimoquinta. Comisión de seguimiento del Sistema Especial para Trabajadores por Cuenta Ajena Agrarios."
+    },
+    "lgss:disp-adicional:decimosexta": {
+      "anchor": "dadecimosexta",
+      "heading": "Disposición adicional decimosexta. Cónyuge del titular de la explotación agraria."
+    },
+    "lgss:disp-adicional:decimoseptima": {
+      "anchor": "dadecimoseptima",
+      "heading": "Disposición adicional decimoséptima. Adecuación del Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos."
+    },
+    "lgss:disp-adicional:decimoctava": {
+      "anchor": "dadecimoctava",
+      "heading": "Disposición adicional decimoctava. Encuadramiento de los profesionales colegiados."
+    },
+    "lgss:disp-adicional:decimonovena": {
+      "anchor": "dadecimonovena",
+      "heading": "Disposición adicional decimonovena. Ámbito de protección de las mutualidades de previsión social alternativas al Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos."
+    },
+    "lgss:disp-adicional:vigesima": {
+      "anchor": "davigesima",
+      "heading": "Disposición adicional vigésima. Coeficientes reductores de la edad de jubilación de los miembros del Cuerpo de la Ertzaintza."
+    },
+    "lgss:disp-adicional:vigesima-bis": {
+      "anchor": "da-15",
+      "heading": "Disposición adicional vigésima bis. Coeficientes reductores de la edad de jubilación de los miembros del Cuerpo de Mossos d’Esquadra."
+    },
+    "lgss:disp-adicional:vigesima-ter": {
+      "anchor": "da-16",
+      "heading": "Disposición adicional vigésima ter. Coeficientes reductores de la edad de jubilación de los miembros de la Policía Foral de Navarra."
+    },
+    "lgss:disp-adicional:vigesima-primera": {
+      "anchor": "davigesimaprimera",
+      "heading": "Disposición adicional vigésima primera. Cómputo de períodos cotizados a los Montepíos de las Administraciones Públicas de Navarra."
+    },
+    "lgss:disp-adicional:vigesima-segunda": {
+      "anchor": "davigesimasegunda",
+      "heading": "Disposición adicional vigésima segunda. Informe sobre la adecuación y suficiencia de las pensiones del sistema de la Seguridad Social."
+    },
+    "lgss:disp-adicional:vigesima-tercera": {
+      "anchor": "davigesimatercera",
+      "heading": "Disposición adicional vigésima tercera. Bonificaciones de cuotas de la Seguridad Social y de aportaciones de recaudación conjunta en determinadas relaciones laborales de carácter especial y reducciones respecto de trabajadores de determinados ámbitos geográficos."
+    },
+    "lgss:disp-adicional:vigesima-cuarta": {
+      "anchor": "davigesimacuaa",
+      "heading": "Disposición adicional vigésima cuarta. Aplicación de los beneficios en la cotización en el Sistema Especial para Empleados de Hogar."
+    },
+    "lgss:disp-adicional:vigesima-quinta": {
+      "anchor": "davigesimaquinta",
+      "heading": "Disposición adicional vigésima quinta. Asimilación a un grado de discapacidad igual o superior al 65 por ciento por resolución judicial."
+    },
+    "lgss:disp-adicional:vigesima-sexta": {
+      "anchor": "davigesimasexta",
+      "heading": "Disposición adicional vigésima sexta. Cónyuges de titulares de establecimientos familiares."
+    },
+    "lgss:disp-adicional:vigesima-septima": {
+      "anchor": "da",
+      "heading": "Disposición adicional vigésima séptima. Subsidio extraordinario por desempleo."
+    },
+    "lgss:disp-adicional:vigesima-octava": {
+      "anchor": "da-2",
+      "heading": "Disposición adicional vigésima octava. Excepciones a la cobertura obligatoria de todas las contingencias en el Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos."
+    },
+    "lgss:disp-adicional:vigesima-novena": {
+      "anchor": "da-3",
+      "heading": "Disposición adicional vigésima novena. Convenio especial para los afectados por la crisis."
+    },
+    "lgss:disp-adicional:trigesima": {
+      "anchor": "da-4",
+      "heading": "Disposición adicional trigésima. Aplicación del nuevo artículo 249 bis del texto refundido de la Ley General de la Seguridad Social, aprobado por Real Decreto Legislativo 8/2015, de 30 de octubre."
+    },
+    "lgss:disp-adicional:trigesima-primera": {
+      "anchor": "da-5",
+      "heading": "Disposición adicional trigésima primera. Devolución de cuotas en supuestos de variación de datos de empresas y trabajadores."
+    },
+    "lgss:disp-adicional:trigesima-segunda": {
+      "anchor": "da-6",
+      "heading": "Disposición adicional trigésima segunda. Financiación de la acción protectora de la Seguridad Social en cumplimiento del principio de separación de fuentes consagrado en el Pacto de Toledo."
+    },
+    "lgss:disp-adicional:trigesima-tercera": {
+      "anchor": "da-7",
+      "heading": "Disposición adicional trigésima tercera. Modificación de la competencia territorial de órganos provinciales de las entidades gestoras y servicios comunes de la Seguridad Social."
+    },
+    "lgss:disp-adicional:trigesima-cuarta": {
+      "anchor": "da-8",
+      "heading": "Disposición adicional trigésima cuarta. Habilitación a los autorizados del Sistema RED."
+    },
+    "lgss:disp-adicional:trigesima-quinta": {
+      "anchor": "da-9",
+      "heading": "Disposición adicional trigésima quinta. Convenios del Instituto Nacional de la Seguridad Social o del Instituto Social de la Marina con las Comunidades Autónomas y con el Instituto Nacional de Gestión Sanitaria."
+    },
+    "lgss:disp-adicional:trigesima-sexta": {
+      "anchor": "da-10",
+      "heading": "Disposición adicional trigésima sexta. Financiación del complemento de pensiones contributivas para la reducción de la brecha de género."
+    },
+    "lgss:disp-adicional:trigesima-septima": {
+      "anchor": "da-11",
+      "heading": "Disposición adicional trigésima séptima. Alcance temporal de las acciones positivas para la reducción de la brecha de género en las pensiones contributivas."
+    },
+    "lgss:disp-adicional:trigesima-octava": {
+      "anchor": "da-12",
+      "heading": "Disposición adicional trigésima octava. Gastos de manutención y gastos y pluses de distancia por desplazamiento de los músicos."
+    },
+    "lgss:disp-adicional:trigesima-novena": {
+      "anchor": "da-13",
+      "heading": "Disposición adicional trigésima novena. Seguimiento de la revalorización de las pensiones y garantía de mantenimiento de poder adquisitivo de las pensiones."
+    },
+    "lgss:disp-adicional:cuadragesima": {
+      "anchor": "da-14",
+      "heading": "Disposición adicional cuadragésima. Pensión de viudedad de parejas de hecho en supuestos excepcionales."
+    },
+    "lgss:disp-adicional:cuadragesima-primera": {
+      "anchor": "da-19",
+      "heading": "Disposición adicional cuadragésima primera. Medidas de protección social de las personas trabajadoras afectadas por la aplicación del Mecanismo RED de Flexibilidad y Estabilización del Empleo, regulado en el artículo 47 bis del texto refundido de la Ley del Estatuto de los Trabajadores."
+    },
+    "lgss:disp-adicional:cuadragesima-segunda": {
+      "anchor": "da-20",
+      "heading": "Disposición adicional cuadragésima segunda. Actuaciones del Servicio Público de Empleo Estatal y de la Tesorería General de la Seguridad Social para la simplificación de actuaciones administrativas."
+    },
+    "lgss:disp-adicional:cuadragesima-tercera": {
+      "anchor": "da-21",
+      "heading": "Disposición adicional cuadragésima tercera. Cotización a la Seguridad Social de los contratos formativos en alternancia."
+    },
+    "lgss:disp-adicional:cuadragesima-cuarta": {
+      "anchor": "da-22",
+      "heading": "Disposición adicional cuadragésima cuarta. Beneficios en la cotización a la Seguridad Social aplicables a los expedientes de regulación temporal de empleo y al Mecanismo RED."
+    },
+    "lgss:disp-adicional:cuadragesima-quinta": {
+      "anchor": "da-17",
+      "heading": "Disposición adicional cuadragésima quinta. Actuación de la Inspección de Trabajo y Seguridad Social."
+    },
+    "lgss:disp-adicional:cuadragesima-sexta": {
+      "anchor": "da-18",
+      "heading": "Disposición adicional cuadragésima sexta. Protección social de las personas trabajadoras en los expedientes de regulación temporal de empleo por fuerza mayor."
+    },
+    "lgss:disp-adicional:cuadragesima-septima": {
+      "anchor": "da-23",
+      "heading": "Disposición adicional cuadragésima séptima. Reducciones de cuotas de las contribuciones empresariales a los planes de empleo."
+    },
+    "lgss:disp-adicional:cuadragesima-octava": {
+      "anchor": "da-24",
+      "heading": "Disposición adicional cuadragésima octava. Prestación para la sostenibilidad de la actividad de las personas trabajadoras autónomas de un sector de actividad afectado por el Mecanismo RED de Flexibilidad y Estabilización del Empleo en su modalidad cíclica, regulado en el artículo 47 bis del texto refundido de la Ley del Estatuto de los Trabajadores."
+    },
+    "lgss:disp-adicional:cuadragesima-novena": {
+      "anchor": "da-25",
+      "heading": "Disposición adicional cuadragésima novena. Prestación para la sostenibilidad de la actividad de las personas trabajadoras autónomas de un sector de actividad afectado por el Mecanismo RED de Flexibilidad y Estabilización del Empleo en su modalidad sectorial, regulado en el artículo 47 bis del texto refundido de la Ley del Estatuto de los Trabajadores."
+    },
+    "lgss:disp-adicional:quincuagesima": {
+      "anchor": "da-26",
+      "heading": "Disposición adicional quincuagésima. Observatorio para el análisis y seguimiento de la prestación por cese de actividad por causas económicas, así como de la integración de períodos sin obligación de cotizar de los trabajadores autónomos."
+    },
+    "lgss:disp-adicional:quincuagesima-primera": {
+      "anchor": "da-27",
+      "heading": "Disposición adicional quincuagésima primera. Prestación especial por desempleo de las personas trabajadoras sujetas a la relación laboral especial de los artistas que desarrollan su actividad en las artes escénicas, audiovisuales y musicales, así como de las personas que realizan actividades técnicas y auxiliares necesarias para el desarrollo de dicha actividad."
+    },
+    "lgss:disp-adicional:quincuagesima-segunda": {
+      "anchor": "da-28",
+      "heading": "Disposición adicional quincuagésima segunda. Inclusión en el sistema de Seguridad Social de alumnos que realicen prácticas formativas o prácticas académicas externas incluidas en programas de formación."
+    },
+    "lgss:disp-adicional:quincuagesima-tercera": {
+      "anchor": "da-29",
+      "heading": "Disposición adicional quincuagésima tercera. Pensiones mínimas e indicadores de suficiencia en cumplimiento de la recomendación 15 del Pacto de Toledo."
+    },
+    "lgss:disp-adicional:quincuagesima-cuarta": {
+      "anchor": "da-30",
+      "heading": "Disposición adicional quincuagésima cuarta. Garantía de servicios a personas beneficiarias del nivel asistencial."
+    },
+    "lgss:disp-adicional:quincuagesima-quinta": {
+      "anchor": "da-31",
+      "heading": "Disposición adicional quincuagésima quinta. Evaluación financiera y de mejora de la empleabilidad."
+    },
+    "lgss:disp-adicional:quincuagesima-sexta": {
+      "anchor": "da-32",
+      "heading": "Disposición adicional quincuagésima sexta. Acceso extraordinario a la prestación contributiva por desempleo de las personas trabajadoras transfronterizas en las ciudades autónomas de Ceuta y Melilla."
+    },
+    "lgss:disp-adicional:quincuagesima-septima": {
+      "anchor": "da-33",
+      "heading": "Disposición adicional quincuagésima séptima. Acceso al subsidio por desempleo de emigrantes retornados."
+    },
+    "lgss:disp-adicional:quincuagesima-octava": {
+      "anchor": "da-34",
+      "heading": "Disposición adicional quincuagésima octava. Acceso al subsidio por desempleo por las personas víctimas de violencia de género o sexual."
+    },
+    "lgss:disp-adicional:quincuagesima-novena": {
+      "anchor": "da-35",
+      "heading": "Disposición adicional quincuagésima novena. Régimen de compatibilidad aplicable a las prestaciones por desempleo."
+    },
+    "lgss:disp-adicional:sexagesima": {
+      "anchor": "da-36",
+      "heading": "Disposición adicional sexagésima. Seguimiento de los convenios celebrados entre las mutuas colaboradoras con la Seguridad Social y los Servicios Públicos de Salud, así como de evaluación de la incapacidad temporal."
+    },
+    "lgss:disp-adicional:sexagesima-primera": {
+      "anchor": "da-37",
+      "heading": "Disposición adicional sexagésima primera. Tarifa de primas para la cotización a la Seguridad Social por accidentes de trabajo y enfermedades profesionales."
+    },
+    "lgss:disp-adicional:sexagesima-segunda": {
+      "anchor": "da-38",
+      "heading": "Disposición adicional sexagésima segunda. Mejora en la transparencia en la gestión y en la supervisión y control de las mutualidades de previsión social autorizadas para actuar como alternativas al Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos."
+    },
+    "lgss:disp-adicional:sexagesima-tercera": {
+      "anchor": "da-39",
+      "heading": "Disposición adicional sexagésima tercera. Evaluación del régimen de alternatividad en el ámbito de las mutualidades de previsión social."
+    },
+    "lgss:disp-adicional:sexagesima-cuarta": {
+      "anchor": "da-40",
+      "heading": "Disposición adicional sexagésima cuarta. Asimilación de las prestaciones de la Seguridad Social a contingencias profesionales en situaciones catastróficas."
+    },
+    "lgss:disp-transitoria:primera": {
+      "anchor": "dtprimera",
+      "heading": "Disposición transitoria primera. Derechos transitorios derivados de la legislación anterior a 1967."
+    },
+    "lgss:disp-transitoria:segunda": {
+      "anchor": "dtsegunda",
+      "heading": "Disposición transitoria segunda. Prestaciones del extinguido Seguro Obligatorio de Vejez e Invalidez."
+    },
+    "lgss:disp-transitoria:tercera": {
+      "anchor": "dttercera",
+      "heading": "Disposición transitoria tercera. Cotizaciones efectuadas en anteriores regímenes."
+    },
+    "lgss:disp-transitoria:cuarta": {
+      "anchor": "dtcuaa",
+      "heading": "Disposición transitoria cuarta. Aplicación de legislaciones anteriores para causar derecho a pensión de jubilación."
+    },
+    "lgss:disp-transitoria:quinta": {
+      "anchor": "dtquinta",
+      "heading": "Disposición transitoria quinta. Jubilación anticipada en determinados casos especiales."
+    },
+    "lgss:disp-transitoria:sexta": {
+      "anchor": "dtsexta",
+      "heading": "Disposición transitoria sexta. Situación asimilada a la de alta en los procesos de reconversión."
+    },
+    "lgss:disp-transitoria:septima": {
+      "anchor": "dtseptima",
+      "heading": "Disposición transitoria séptima. Aplicación paulatina de la edad de jubilación y de los años de cotización."
+    },
+    "lgss:disp-transitoria:octava": {
+      "anchor": "dtoctava",
+      "heading": "Disposición transitoria octava. Normas transitorias sobre la base reguladora de la pensión de jubilación."
+    },
+    "lgss:disp-transitoria:novena": {
+      "anchor": "dtnovena",
+      "heading": "Disposición transitoria novena. Aplicación de los porcentajes a atribuir a los años cotizados para calcular la pensión de jubilación."
+    },
+    "lgss:disp-transitoria:decima": {
+      "anchor": "dtdecima",
+      "heading": "Disposición transitoria décima. Normas transitorias sobre jubilación parcial."
+    },
+    "lgss:disp-transitoria:undecima": {
+      "anchor": "dtundecima",
+      "heading": "Disposición transitoria undécima. Aplicación de coeficientes reductores de la edad de jubilación."
+    },
+    "lgss:disp-transitoria:duodecima": {
+      "anchor": "dtduodecima",
+      "heading": "Disposición transitoria duodécima. Cómputo a efectos de jubilación de períodos con exoneración de cuotas de trabajadores con sesenta y cinco o más años."
+    },
+    "lgss:disp-transitoria:decimotercera": {
+      "anchor": "dtdecimotercera",
+      "heading": "Disposición transitoria decimotercera. Norma transitoria sobre pensión de viudedad en supuestos de separación judicial o divorcio anteriores al 1 de enero de 2008."
+    },
+    "lgss:disp-transitoria:decimocuarta": {
+      "anchor": "dtdecimocuaa",
+      "heading": "Disposición transitoria decimocuarta. Aplicación de beneficios por cuidado de hijos o menores."
+    },
+    "lgss:disp-transitoria:decimoquinta": {
+      "anchor": "dtdecimoquinta",
+      "heading": "Disposición transitoria decimoquinta. Valor del parámetro α de la expresión matemática para la determinación del índice de revalorización de las pensiones contributivas."
+    },
+    "lgss:disp-transitoria:decimosexta": {
+      "anchor": "dtdecimosexta",
+      "heading": "Disposición transitoria decimosexta. Bases y tipos de cotización y acción protectora en el Sistema Especial para Empleados de Hogar."
+    },
+    "lgss:disp-transitoria:decimoseptima": {
+      "anchor": "dtdecimoseptima",
+      "heading": "Disposición transitoria decimoséptima. Trabajadores por cuenta ajena procedentes del Régimen Especial Agrario de la Seguridad Social."
+    },
+    "lgss:disp-transitoria:decimoctava": {
+      "anchor": "dtdecimoctava",
+      "heading": "Disposición transitoria decimoctava. Aplicación paulatina de las bases y tipos de cotización y de reducciones en el Sistema Especial para Trabajadores por Cuenta Ajena Agrarios."
+    },
+    "lgss:disp-transitoria:decimonovena": {
+      "anchor": "dtdecimonovena",
+      "heading": "Disposición transitoria decimonovena. Régimen de encuadramiento de determinados socios de trabajo."
+    },
+    "lgss:disp-transitoria:vigesima": {
+      "anchor": "dtvigesima",
+      "heading": "Disposición transitoria vigésima. Validez a efectos de prestaciones de cuotas anteriores al alta en el Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos."
+    },
+    "lgss:disp-transitoria:vigesima-primera": {
+      "anchor": "dtvigesimaprimera",
+      "heading": "Disposición transitoria vigésima primera. Integración de entidades sustitutorias"
+    },
+    "lgss:disp-transitoria:vigesima-segunda": {
+      "anchor": "dtvigesimasegunda",
+      "heading": "Disposición transitoria vigésima segunda. Deudas con la Seguridad Social de los clubes de fútbol."
+    },
+    "lgss:disp-transitoria:vigesima-tercera": {
+      "anchor": "dtvigesimatercera",
+      "heading": "Disposición transitoria vigésima tercera. Conciertos para la recaudación."
+    },
+    "lgss:disp-transitoria:vigesima-cuarta": {
+      "anchor": "dtvigesimacuaa",
+      "heading": "Disposición transitoria vigésima cuarta. Incompatibilidad de las prestaciones no contributivas."
+    },
+    "lgss:disp-transitoria:vigesima-quinta": {
+      "anchor": "dtvigesimaquinta",
+      "heading": "Disposición transitoria vigésima quinta. Pervivencia de subsidios económicos de personas con discapacidad."
+    },
+    "lgss:disp-transitoria:vigesima-sexta": {
+      "anchor": "dtvigesimasexta",
+      "heading": "Disposición transitoria vigésima sexta. Calificación de la incapacidad permanente."
+    },
+    "lgss:disp-transitoria:vigesima-septima": {
+      "anchor": "dtvigesimaseptima",
+      "heading": "Disposición transitoria vigésima séptima. Complementos por mínimos para pensiones contributivas."
+    },
+    "lgss:disp-transitoria:vigesima-octava": {
+      "anchor": "dtvigesimaoctava",
+      "heading": "Disposición transitoria vigésima octava. Acreditación de determinadas situaciones legales de desempleo."
+    },
+    "lgss:disp-transitoria:vigesima-novena": {
+      "anchor": "dtvigesimanovena",
+      "heading": "Disposición transitoria vigésima novena. Cobertura de la prestación económica por incapacidad temporal de los trabajadores incorporados al Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos con anterioridad al 1 de enero de 1998."
+    },
+    "lgss:disp-transitoria:trigesima": {
+      "anchor": "dt",
+      "heading": "Disposición transitoria trigésima. Acceso al subsidio extraordinario de desempleo en determinados supuestos."
+    },
+    "lgss:disp-transitoria:trigesima-primera": {
+      "anchor": "dt-2",
+      "heading": "Disposición transitoria trigésima primera. Convenios especiales en el Sistema de la Seguridad Social de los cuidadores no profesionales de las personas en situación de dependencia existentes a la fecha de entrada en vigor del Real Decreto-ley 6/2019, de 1 de marzo, de medidas urgentes para garantía de la igualdad de trato y de oportunidades entre mujeres y hombres en el empleo y la ocupación."
+    },
+    "lgss:disp-transitoria:trigesima-segunda": {
+      "anchor": "dt-3",
+      "heading": "Disposición transitoria trigésima segunda. Periodo transitorio para el abono del periodo no obligatorio de la prestación por nacimiento y cuidado de menor."
+    },
+    "lgss:disp-transitoria:trigesima-tercera": {
+      "anchor": "dt-4",
+      "heading": "Disposición transitoria trigésima tercera. Mantenimiento transitorio del complemento por maternidad en las pensiones contributivas del sistema de la Seguridad Social."
+    },
+    "lgss:disp-transitoria:trigesima-cuarta": {
+      "anchor": "dt-5",
+      "heading": "Disposición transitoria trigésima cuarta. Aplicación gradual de coeficientes reductores de la edad de jubilación según lo previsto en el artículo 210.3 cuando la pensión supere el límite establecido para el importe de las pensiones."
+    },
+    "lgss:disp-transitoria:trigesima-quinta": {
+      "anchor": "dt-6",
+      "heading": "Disposición transitoria trigésima quinta. Distribución del excedente y constitución de las reservas de estabilización correspondientes al ejercicio 2022."
+    },
+    "lgss:disp-transitoria:trigesima-quinta-sic": {
+      "anchor": "dt-7",
+      "heading": "Disposición transitoria trigésima quinta [sic]. Compatibilidad de la pensión contributiva de jubilación con el trabajo de los facultativos de atención primaria médicos de familia y pediatras, adscritos al sistema nacional de salud con nombramiento estatutario o funcionario."
+    },
+    "lgss:disp-transitoria:trigesima-septima": {
+      "anchor": "dt-8",
+      "heading": "Disposición transitoria trigésima séptima. Inspección médica del Instituto Nacional de la Seguridad Social."
+    },
+    "lgss:disp-transitoria:trigesima-octava": {
+      "anchor": "dt-9",
+      "heading": "Disposición transitoria trigésima octava. Norma transitoria para la aplicación del tope máximo de la base de cotización."
+    },
+    "lgss:disp-transitoria:trigesima-novena": {
+      "anchor": "dt-10",
+      "heading": "Disposición transitoria trigésima novena. Norma transitoria para la determinación del límite máximo para la pensión inicial desde 1 de enero de 2025."
+    },
+    "lgss:disp-transitoria:cuadragesima": {
+      "anchor": "dt-11",
+      "heading": "Disposición transitoria cuadragésima. Normas transitorias sobre la base reguladora de la pensión de jubilación."
+    },
+    "lgss:disp-transitoria:cuadragesima-primera": {
+      "anchor": "dt-12",
+      "heading": "Disposición transitoria cuadragésima primera. Integración de períodos sin obligación de cotizar para el cálculo de las pensiones de jubilación en tanto la brecha de género de las pensiones de jubilación sea superior al 5 por ciento."
+    },
+    "lgss:disp-transitoria:cuadragesima-segunda": {
+      "anchor": "dt-13",
+      "heading": "Disposición transitoria cuadragésima segunda. Aplicación de la cotización adicional de solidaridad."
+    },
+    "lgss:disp-transitoria:cuadragesima-tercera": {
+      "anchor": "dt-14",
+      "heading": "Disposición transitoria cuadragésima tercera. Aplicación del Mecanismo de Equidad Intergeneracional."
+    },
+    "lgss:disp-transitoria:cuadragesima-cuarta": {
+      "anchor": "dt-15",
+      "heading": "Disposición transitoria cuadragésima cuarta. Aplicación del artículo 60 a hechos causantes anteriores."
+    },
+    "lgss:disp-transitoria:cuadragesima-cuarta-sic": {
+      "anchor": "dt-16",
+      "heading": "Disposición transitoria cuadragésima cuarta [sic]. Régimen transitorio de compatibilidad de las prestaciones por desempleo."
+    },
+    "lgss:disp-transitoria:cuadragesima-quinta": {
+      "anchor": "dt-17",
+      "heading": "Disposición transitoria cuadragésima quinta. Obligación de comunicación del código de la Clasificación Nacional de Actividades Económicas 2025 (CNAE-2025)."
+    },
+    "lgss:disp-transitoria:cuadragesima-sexta": {
+      "anchor": "dt-18",
+      "heading": "Disposición transitoria cuadragésima sexta. Cotización de los trabajadores integrados en mutualidades alternativas al Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos hasta 2028."
+    },
+    "lgss:disp-transitoria:cuadragesima-septima": {
+      "anchor": "dt-19",
+      "heading": "Disposición transitoria cuadragésima séptima. Transferencia excepcional y voluntaria a la Tesorería General de la Seguridad Social de los derechos económicos acumulados en las mutualidades de previsión social autorizadas para actuar como alternativas al Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos."
+    },
+    "lgss:disp-transitoria:cuadragesima-octava": {
+      "anchor": "dt-20",
+      "heading": "Disposición transitoria cuadragésima octava. Reconocimiento de la pensión de viudedad de parejas de hecho en supuestos excepcionales."
+    },
+    "lgss:disp-final:primera": {
+      "anchor": "dfprimera",
+      "heading": "Disposición final primera. Título competencial."
+    },
+    "lgss:disp-final:segunda": {
+      "anchor": "dfsegunda",
+      "heading": "Disposición final segunda. Competencias de otros departamentos ministeriales."
+    },
+    "lgss:disp-final:tercera": {
+      "anchor": "dftercera",
+      "heading": "Disposición final tercera. Acomodación de las normas sobre pensión de jubilación por disminución de la edad."
+    },
+    "lgss:disp-final:cuarta": {
+      "anchor": "dfcuaa",
+      "heading": "Disposición final cuarta. Trabajadores que permanezcan en activo."
+    },
+    "lgss:disp-final:quinta": {
+      "anchor": "dfquinta",
+      "heading": "Disposición final quinta. Disposiciones relativas a trabajadores por cuenta ajena agrarios."
+    },
+    "lgss:disp-final:sexta": {
+      "anchor": "dfsexta",
+      "heading": "Disposición final sexta. Trabajadores autónomos dedicados a la venta ambulante o a domicilio."
+    },
+    "lgss:disp-final:sexta-bis": {
+      "anchor": "df",
+      "heading": "Disposición final sexta bis. Ampliación del régimen de compatibilidad entre la pensión de jubilación y el trabajo por cuenta ajena."
+    },
+    "lgss:disp-final:septima": {
+      "anchor": "dfseptima",
+      "heading": "Disposición final séptima. Competencias sobre la incapacidad temporal."
+    },
+    "lgss:disp-final:octava": {
+      "anchor": "dfoctava",
+      "heading": "Disposición final octava. Desarrollo reglamentario."
+    }
+  }
+}

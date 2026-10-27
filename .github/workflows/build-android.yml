@@ -1,0 +1,60 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'version-unificada/**'
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Setup Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+
+    - name: Install Android SDK packages
+      run: |
+        yes | sdkmanager --licenses >/dev/null || true
+        sdkmanager "platforms;android-36" "build-tools;36.0.0"
+
+    - name: Install dependencies
+      working-directory: ./version-unificada
+      run: npm ci
+
+    - name: Generate icons
+      working-directory: ./version-unificada
+      run: npm run generate-icons
+
+    - name: Generate splash
+      working-directory: ./version-unificada
+      run: npm run generate-splash
+
+    - name: Sync Capacitor
+      working-directory: ./version-unificada
+      run: npx cap sync android
+
+    - name: Build APK
+      working-directory: ./version-unificada/android
+      run: ./gradlew assembleDebug
+
+    - name: Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: android-apk
+        path: version-unificada/android/app/build/outputs/apk/debug/app-debug.apk

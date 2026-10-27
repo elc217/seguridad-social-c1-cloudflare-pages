@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#125B95">
+    <title>LGSS · Seguridad Social C1</title>
+    <link rel="icon" href="./assets/libro.svg" type="image/svg+xml">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./src/app.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js').catch(console.error);
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio"><img class="brand-mark" src="./assets/libro.svg" width="56" height="56" alt="Libro abierto de Seguridad Social C1"><span><span class="brand-eyebrow">OPOSICIÓN · ADMINISTRATIVOS C1</span><strong>Seguridad Social C1</strong><small>LGSS ordenada para estudiar precepto a precepto</small></span></a>
+    </header>
+    <div id="notice" role="alert" hidden></div>
+    <main id="app" tabindex="-1"><p>Cargando biblioteca y banco de preguntas…</p></main>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio"><span class="material-icon" aria-hidden="true">&#xe88a;</span><span>Inicio</span></a>
+      <a href="#biblioteca"><span class="material-icon" aria-hidden="true">&#xea19;</span><span>Biblioteca</span></a>
+      <a href="#tarjetas"><span class="material-icon" aria-hidden="true">&#xe41d;</span><span>Tarjetas</span></a>
+      <a href="#test"><span class="material-icon" aria-hidden="true">&#xf04c;</span><span>Test</span></a>
+      <a href="#progreso"><span class="material-icon" aria-hidden="true">&#xe26b;</span><span>Progreso</span></a>
+    </nav>
+    <noscript>Esta aplicación necesita JavaScript para estudiar y guardar tu progreso.</noscript>
+  </body>
+</html>

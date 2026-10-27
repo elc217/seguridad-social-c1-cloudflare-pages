@@ -1,0 +1,74 @@
+LGSS C1 - Version unificada independiente
+========================================
+
+Esta carpeta es una aplicacion nueva. No modifica los HTML, JavaScript ni el
+almacenamiento de la exportacion original. No necesita paquetes externos.
+Requiere Node.js 20 o posterior solo para servir, regenerar datos y ejecutar tests.
+
+Inicio local:
+  cd version-unificada
+  npm start
+  Abrir http://127.0.0.1:8766
+
+Validacion:
+  npm test
+
+Datos:
+  data/corpus.json contiene una copia independiente de la instantanea original
+  y el banco ampliado. Se incluye para no depender del original al publicar.
+  npm run prepare-data regenera esos datos desde el paquete Expo del directorio
+  superior. Solo es necesario si se cambia el generador o las preguntas editoriales.
+  La regeneracion no descarga ni actualiza automaticamente la legislacion.
+
+Publicacion en Cloudflare Pages:
+  npm run package crea lgss-c1-cloudflare.zip con index.html en la raiz y
+  solo recursos publicos necesarios. En Cloudflare Pages, crear proyecto de
+  carga directa, subir el ZIP y desplegar. No configurar comando de build.
+  Publicar esta carpeta completa como directorio de salida de un sitio estatico.
+  No requiere compilacion. La navegacion por fragmentos (#biblioteca, #test...)
+  permite recargar y compartir enlaces sin reglas dinamicas.
+  No mezclar esta carpeta con los archivos de la exportacion anterior.
+
+Aspecto:
+  Se recuperan la paleta azul, tipografia, tarjetas, cabecera y barra inferior
+  del original, con avisos y errores diferenciados. Se recuperan el libro SVG
+  y los cinco iconos originales de navegacion (Material Icons). Los recursos
+  se copian a assets/ al regenerar y se sirven localmente, sin fuentes remotas.
+  La fuente Material Icons es de Google y esta distribuida con licencia
+  Apache 2.0; se reutiliza el recurso ya incluido en la exportacion original.
+
+Alcance y preguntas:
+  Se conserva el alcance original de 470 unidades, sin el Titulo III
+  (articulos 262-304). Esto no certifica correspondencia con un temario C1.
+  La interfaz presenta una sola LGSS aprobada por el Real Decreto Legislativo
+  8/2015. La norma aprobatoria sigue como apartado de la misma biblioteca.
+  Hasta 8 preguntas por unidad; las unidades cortas, derogadas o sin fragmentos
+  adecuados tienen menos. No se rellena el banco con repeticiones.
+  Literalidad: respuesta escrita sobre fragmentos diferentes, sin distractores
+  aleatorios. Se conservan tildes y puntuacion en la evaluacion.
+  Comprension: primera seleccion editorial con cita y explicacion; BORRADOR
+  PENDIENTE DE REVISION JURIDICA. No representa una validacion del temario ni
+  miles de preguntas de interpretacion juridica. Se amplia en src/editorial.js.
+  Los tests ofrecen 12, 25 o 50, reducidos al banco filtrado disponible, sin
+  repetir preguntas. El muestreo reparte preguntas entre unidades.
+  Cada correccion permite comprobar la cita exacta en la unidad.
+  Los enlaces BOE abren el precepto exacto con su marcador oficial, no el
+  identificador EPUB del original. data/boe-anchors.json conserva el mapa
+  contrastado con el HTML oficial, la fecha y la huella de la consulta.
+  npm run update-boe-links actualiza ese mapa consultando el BOE (o admite
+  como argumento una copia local del HTML oficial). Despues ejecutar
+  npm run prepare-data, npm test y npm run package para actualizar el ZIP.
+  Si falta una coincidencia o es ambigua, el proceso falla de forma explicita.
+  La fecha mostrada es la de la instantanea importada: verificar vigencia en BOE.
+
+Progreso:
+  La nueva clave es lgss.c1.unified.progress.v1. Nunca sobrescribe la original
+  lgss.c1.study.progress.v1. Se conservan los identificadores de las unidades.
+  Progreso ofrece exportacion/importacion JSON y copia del almacen anterior si
+  ambas versiones comparten origen. Un puerto o dominio distinto es otro origen.
+  No se leen almacenes de otro origen ni se sincronizan dispositivos.
+  Importar combina el estado mas avanzado y deduplica sesiones. Los registros
+  no resolubles se mantienen como legado. Un archivo incompatible se rechaza.
+  La exportacion no incluye preguntas: solo progreso y respuestas del usuario.
+  Un test en curso se mantiene al navegar entre pantallas, pero no al recargar;
+  el navegador avisa antes de cerrar. Los resultados finalizados si se guardan.

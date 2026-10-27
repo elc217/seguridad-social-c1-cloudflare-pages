@@ -1,0 +1,27 @@
+# Dependencias
+**/node_modules/
+
+# Archivos del sistema y del editor
+.DS_Store
+*.swp
+.vscode/*.log
+
+# Builds y artefactos generados
+**/dist/
+**/build/
+**/DerivedData/
+**/Pods/
+**/www/
+*.zip
+*.dmg
+*.blockmap
+*.apk
+*.aab
+*.ipa
+*.exe
+
+# Configuración local de herramientas
+.env
+.env.*
+!.env.example
+local.properties
