@@ -91,6 +91,13 @@ summary { cursor: pointer; font-weight: 600; }
 nav { position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: center; background: white; border-top: 1px solid var(--border); padding: 5px .4rem max(7px, env(safe-area-inset-bottom)); gap: 0; z-index: 2; }
 nav a { display: flex; flex: 1; max-width: 180px; flex-direction: column; align-items: center; justify-content: center; gap: 4px; min-height: 52px; padding: 5px .35rem; color: #4b6175; font-size: 11px; font-weight: 800; text-decoration: none; }
 nav a[aria-current] { color: var(--primary); }
+.institutional-footer {
+  display: flex; flex-direction: column; gap: .25rem; max-width: 940px; margin: 0 auto;
+  padding: 1.5rem 20px 6rem; color: #4b6175; font-size: .75rem; line-height: 1.5;
+  text-align: center;
+}
+.institutional-footer img { width: 120px; max-height: 48px; object-fit: contain; margin: 0 auto .35rem; }
+.institutional-footer strong { color: #12304a; font-size: .8rem; }
 #notice { margin: 1rem auto; max-width: 1040px; padding: 1rem; color: #782b17; background: #ffebe4; border: 1px solid #dd9f8d; border-radius: 10px; }
 @media (max-width: 600px) {
   .panel { padding: 16px; }

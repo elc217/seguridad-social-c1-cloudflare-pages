@@ -6,8 +6,8 @@ const root = fileURLToPath(new URL("../", import.meta.url));
 const archive = fileURLToPath(new URL("../lgss-c1-cloudflare.zip", import.meta.url));
 const files = [
   "index.html", "styles.css", "_headers", "src/app.js", "src/domain.js",
-  "data/corpus.json", "assets/libro.svg", "assets/MaterialIcons.ttf",
-  "assets/MaterialIcons-LICENSE.txt"
+  "data/corpus.json", "assets/libro.svg", "assets/ecap-logo.avif",
+  "assets/MaterialIcons.ttf", "assets/MaterialIcons-LICENSE.txt"
 ];
 for (const file of files) await access(new URL(`../${file}`, import.meta.url));
 try {
