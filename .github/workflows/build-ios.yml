@@ -41,7 +41,7 @@ jobs:
 
     - name: Build iOS
       working-directory: ./version-unificada/ios
-      run: xcodebuild -project App.xcodeproj -scheme App -configuration Debug -sdk iphoneos -derivedDataPath build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO
+      run: xcodebuild -project App/App.xcodeproj -scheme App -configuration Debug -sdk iphoneos -derivedDataPath build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO
 
     - name: Create IPA
       working-directory: ./version-unificada/ios/build/Build/Products/Debug-iphoneos
