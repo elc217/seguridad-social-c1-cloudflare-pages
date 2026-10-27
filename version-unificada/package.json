@@ -9,7 +9,7 @@
     "update-boe-links": "node scripts/update-boe-links.mjs",
     "package": "node scripts/package.mjs",
     "start": "node scripts/serve.mjs",
-    "test": "node --test tests/*.test.mjs",
+    "test": "node --test tests/*.test.mjs tests/**/*.test.mjs",
     "electron": "electron .",
     "build:win": "electron-builder --win",
     "build:mac-intel": "electron-builder --mac --x64",

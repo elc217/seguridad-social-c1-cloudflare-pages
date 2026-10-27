@@ -2,6 +2,7 @@ import {
   STORAGE_KEY, LEGACY_KEY, TEST_LENGTHS, shuffled, createSession, evaluateAnswer,
   sessionSummary, emptyProgress, validateProgress, mergeProgress, unitStatus, resultsMetrics
 } from "./domain.js";
+import { getGoogleSyncConfig } from "./sync/config.js";
 
 const app = document.querySelector("#app");
 const notice = document.querySelector("#notice");
@@ -345,6 +346,17 @@ function importProgress(value) {
   if (save(next)) render();
 }
 
+function syncPanel() {
+  const config = getGoogleSyncConfig();
+  return panel(heading("Sincronización entre dispositivos"),
+    text("El progreso se guarda en este dispositivo. Puedes preparar una copia privada en el espacio de la aplicación de tu Google Drive cuando la sincronización esté configurada."),
+    text(config.enabled
+      ? "Google Drive está configurado; la autorización se solicitará únicamente cuando pulses Conectar."
+      : "Google Drive aún no está configurado en esta versión. No se solicita ningún permiso ni se envían datos.", "muted"),
+    row(button("Conectar con Google Drive", () => showError(new Error("La sincronización de Google Drive todavía no está activada en este build.")), { disabled: !config.enabled }),
+      button("Exportar copia JSON", () => download(progress, "lgss-progreso-unificado.json"), { class: "secondary" })));
+}
+
 function progressView() {
   const metrics = resultsMetrics(progress.sessions);
   const mastered = data.units.filter(unit => unitStatus(progress, unit.id) === "mastered").length;
@@ -361,6 +373,7 @@ function progressView() {
           h("progress", { max: units.length, value: done, "aria-label": label })),
         text(`${done} de ${units.length} dominadas`, "muted"));
       })),
+    syncPanel(),
     panel(heading("Resultados de práctica"),
       text(`${metrics.completed} tests completados · ${metrics.correct} aciertos en ${metrics.answered} respuestas · ${metrics.percent}%`),
       text(`${progress.openedCardIds.length} tarjetas abiertas · ${progress.revealedCardIds.length} respuestas reveladas`),
